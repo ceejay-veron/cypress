@@ -1,0 +1,151 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T12:41:57.699Z",
+    "end": "2023-08-22T12:42:29.982Z",
+    "duration": 32283,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "41a2203a-4e81-4c21-8c2b-946bc892411b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Dashboard.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Dashboard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b154337f-f0e2-4b6a-a1b7-6fd04506e954",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "This test views the dasboard elements",
+              "fullTitle": "visit Verve Access This test views the dasboard elements",
+              "timedOut": null,
+              "duration": 31934,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//View Dashboard Widgets\ncy.get('.top-section');\ncy.get('.top-section > :nth-child(1)');\ncy.get('.top-section > :nth-child(1) > .top > :nth-child(1)').contains('Total Financial Institutions');\ncy.get('.top-section > :nth-child(2)');\ncy.get('.top-section > :nth-child(2) > .top > :nth-child(1)').contains('Total Artworks');\ncy.get('.top-section > :nth-child(3)');\ncy.get('.top-section > :nth-child(3) > .top > :nth-child(1)').contains('Total Whitelist Card');\ncy.get('.top-section > :nth-child(4)');\ncy.get(':nth-child(4) > .top > :nth-child(1)').contains('Total Users');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Dashboard.cy.js:209:16)",
+                "diff": "- '\\'Dashboard | Verve Access\\''\n+ '\\'Verve Access\\''\n"
+              },
+              "uuid": "77924f96-2eab-455c-b2d5-34c073bd3ce5",
+              "parentUUID": "b154337f-f0e2-4b6a-a1b7-6fd04506e954",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "This test fetches the Dasboard chart for pending artworks",
+              "fullTitle": "visit Verve Access This test fetches the Dasboard chart for pending artworks",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ant-tabs-tab-active > span');\ncy.get(':nth-child(3) > [height=\"263\"]');\ncy.get('.third-section > :nth-child(1)');\ncy.get('.third-section > :nth-child(1)');\ncy.get('.third-section > :nth-child(1)');\nln.setLogout();",
+              "err": {},
+              "uuid": "39e3357f-6bda-4778-b0f3-52a62b75ab85",
+              "parentUUID": "b154337f-f0e2-4b6a-a1b7-6fd04506e954",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "This test fetches the Dasboard chart for approved artworks",
+              "fullTitle": "visit Verve Access This test fetches the Dasboard chart for approved artworks",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ant-tabs-tab-active > span');\ncy.get(':nth-child(2)>.ant-radio>.ant-radio-input').click();\ncy.get(':nth-child(3) > [y=\"81\"]');\ncy.get('.third-section > :nth-child(1)');\ncy.get('.third-section > :nth-child(2)');\ncy.get('.third-section > :nth-child(3)');\nln.setLogout();",
+              "err": {},
+              "uuid": "40a1c89a-4025-43d2-85f6-9ba76810f5bd",
+              "parentUUID": "b154337f-f0e2-4b6a-a1b7-6fd04506e954",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "77924f96-2eab-455c-b2d5-34c073bd3ce5"
+          ],
+          "pending": [],
+          "skipped": [
+            "39e3357f-6bda-4778-b0f3-52a62b75ab85",
+            "40a1c89a-4025-43d2-85f6-9ba76810f5bd"
+          ],
+          "duration": 31934,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

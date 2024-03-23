@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-24T14:58:15.293Z",
+    "end": "2023-07-24T15:01:36.442Z",
+    "duration": 201149,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cfcf045d-593d-4cb1-a241-fefb908a7e7a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\ChipTypes.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\ChipTypes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "24341614-bd51-4996-a98b-4c2c92536304",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should test for url, Navigate to Chiptype Page and add chiptype",
+              "fullTitle": "visit Verve Access should test for url, Navigate to Chiptype Page and add chiptype",
+              "timedOut": null,
+              "duration": 126472,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'Verve Access');\ncy.location('protocol').should('eq', 'https:'); // /cy.contains('Get Started Now').click({timeout : 2000})\ncy.url().should('include', 'admin');\ncy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('vervAdminUser'));\n  ln.setPassword(Cypress.env('verveAdminPass'));\n  ln.clickSubmit();\n});\ncy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('VERVE ADMIN').should('be.visible'); //cy.get('.red').click()\nct.setGoToChipTypePage();\ncy.url().should('include', 'admin/chiptypes');\ncy.contains('Chip Types').should('be.visible');\nct.setAddChipButton();\nct.setCardType(varTest.test);\nct.setCardMan(varTest2.newtest);\nct.setChipprod(varTest2.testname);\nct.setDate('28/09/2023');\nct.setSubmitbutton();\nct.setsuccessMessage();\ncy.wait(6000); //should not add existing chiptype\nct.setAddChipButton();\nct.setCardType(varTest.test);\nct.setCardMan(varTest2.newtest);\nct.setChipprod(varTest2.testname);\nct.setDate('28/09/2023');\nct.setSubmitbutton();\nct.setErrorMessage1();\ncy.wait(6000);\nct.setclose(); //should not adding any chiptype dtails\nct.setAddChipButton(' ');\nct.setCardType(' ');\nct.setCardMan(' ');\nct.setChipprod(' ');\nct.setSubmitbutton();\nct.setErrorMessage2();\nct.setErrorMessage3();\nct.setErrorMessage4();\ncy.wait(6000);\nct.setclose(); //should not add chiptype without Card type\nct.setAddChipButton();\nct.setCardType(' ');\nct.setCardMan(varTest2.newtest);\nct.setChipprod(varTest2.testname);\nct.setDate('28/09/2023');\nct.setSubmitbutton();\nct.setErrorMessage2();\ncy.wait(6000);\nct.setclose(); //should not add chiptype without Card man\nct.setAddChipButton();\nct.setCardType(varTest.test);\nct.setCardMan(' ');\nct.setChipprod(varTest2.testname);\nct.setDate('28/09/2023');\nct.setSubmitbutton();\nct.setErrorMessage3();\ncy.wait(6000);\nct.setclose(); //should not add chiptype without Card man\nct.setAddChipButton();\nct.setCardType(varTest.test);\nct.setCardMan(varTest2.newtest);\nct.setChipprod(' ');\nct.setDate('28/09/2023');\nct.setSubmitbutton();\nct.setErrorMessage4();\ncy.wait(6000);\nct.setclose(); //should not add chiptype without expiry date\nct.setAddChipButton();\nct.setCardType(varTest.test);\nct.setCardMan(varTest2.newtest);\nct.setChipprod(varTest2.testname);\nct.setDate(' ');\nct.setSubmitbutton();\nct.setErrorMessage5();\ncy.wait(6000);\nct.setclose(); //Table header should contain Name Card Type, Card Manufacturer, Chip Product, Expiry Date and  Action\ncy.contains('Card Type').should('be.visible');\ncy.contains('Card Manufacturer').should('be.visible');\ncy.contains('Chip Product').should('be.visible');\ncy.contains('Expiry Date').should('be.visible');\ncy.contains('Action').should('be.visible');\ncy.contains('Active').should('be.visible');",
+              "err": {},
+              "uuid": "3ffb2d71-bd09-4220-b890-b949a032dc7e",
+              "parentUUID": "24341614-bd51-4996-a98b-4c2c92536304",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should Navigate to inactive tab",
+              "fullTitle": "visit Verve Access should Navigate to inactive tab",
+              "timedOut": null,
+              "duration": 23371,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('vervAdminUser'));\n  ln.setPassword(Cypress.env('verveAdminPass'));\n  ln.clickSubmit();\n});\nct.setGoToChipTypePage();\nct.setNavigateinactive();\ncy.wait(3000);\ncy.contains('Card Type').should('be.visible');\ncy.contains('Card Manufacturer').should('be.visible');\ncy.contains('Chip Product').should('be.visible');\ncy.contains('Expiry Date').should('be.visible');\ncy.contains('Inactive').should('be.visible');",
+              "err": {},
+              "uuid": "83b3fbf1-4d6a-4346-bb7f-b50d68e6e601",
+              "parentUUID": "24341614-bd51-4996-a98b-4c2c92536304",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should Search for chip type on active tab",
+              "fullTitle": "visit Verve Access should Search for chip type on active tab",
+              "timedOut": null,
+              "duration": 50573,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('vervAdminUser'));\n  ln.setPassword(Cypress.env('verveAdminPass'));\n  ln.clickSubmit();\n}); // Serach by complete card Type\nct.setGoToChipTypePage();\nct.setSearch(varTest.test);\nct.setVerifySearch(varTest.test);\ncy.reload(); // Serach by incomplete card Type\nct.setGoToChipTypePage();\nct.setSearch(varTest.test);\nct.setVerifySearch(varTest.test);\ncy.reload(); // Serach by complete card Man\nct.setGoToChipTypePage();\nct.setSearch(varTest2.newtest);\nct.setVerifySearch(varTest2.newtest);\ncy.reload(); // Serach by incomplete card Man\nct.setGoToChipTypePage();\nct.setSearch(varTest2.newtest);\nct.setVerifySearch(varTest2.newtest);\ncy.reload(); // Serach by complete card product\nct.setGoToChipTypePage();\nct.setSearch(varTest2.testname);\nct.setVerifySearch(varTest2.testname);\ncy.reload(); // Serach by incomplete card Product\nct.setGoToChipTypePage();\nct.setSearch(varTest2.testname);\nct.setVerifySearch(varTest2.testname);\ncy.reload(); // Serach by non-existing chip type details\nct.setGoToChipTypePage();\nct.setSearch('zabrosdjdwriyfdjncsljds');\nct.setVerifySearch('No Data to Display');\ncy.reload(); // Serach by empty space \nct.setGoToChipTypePage();\nct.setSearch(' ');\nct.setVerifySearch('1');\ncy.reload();",
+              "err": {},
+              "uuid": "9bb7c042-ec5c-4011-ab87-37c9b574004d",
+              "parentUUID": "24341614-bd51-4996-a98b-4c2c92536304",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3ffb2d71-bd09-4220-b890-b949a032dc7e",
+            "83b3fbf1-4d6a-4346-bb7f-b50d68e6e601",
+            "9bb7c042-ec5c-4011-ab87-37c9b574004d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 200416,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

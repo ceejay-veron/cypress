@@ -1,0 +1,207 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+<<<<<<< HEAD
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-24T15:03:32.299Z",
+    "end": "2023-07-24T15:03:59.178Z",
+    "duration": 26879,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "3b14a004-ba7b-481c-b4c6-c00bdb0422f2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Dashboard.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Dashboard.cy.js",
+=======
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-22T12:32:11.448Z",
+    "end": "2023-08-22T12:34:20.152Z",
+    "duration": 128704,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c4755b77-766a-4481-a616-d854ec13885e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Artwork.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Artwork.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "f92327b2-30a1-4b10-8273-69b961faed6b",
+=======
+          "uuid": "1930b43c-178e-459c-b364-e4c89257740b",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "This test views the dasboard elements",
+              "fullTitle": "visit Verve Access This test views the dasboard elements",
+              "timedOut": null,
+              "duration": 26688,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//View Dashboard Widgets\ncy.get('.top-section');\ncy.get('.top-section > :nth-child(1)');\ncy.get('.top-section > :nth-child(1) > .top > :nth-child(1)').contains('Total Financial Institutions');\ncy.get('.top-section > :nth-child(2)');\ncy.get('.top-section > :nth-child(2) > .top > :nth-child(1)').contains('Total Artworks');\ncy.get('.top-section > :nth-child(3)');\ncy.get('.top-section > :nth-child(3) > .top > :nth-child(1)').contains('Total Whitelist Card');\ncy.get('.top-section > :nth-child(4)');\ncy.get(':nth-child(4) > .top > :nth-child(1)').contains('Total Users');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Dashboard.cy.js:209:16)",
+                "diff": "- '\\'Dashboard | Verve Access\\''\n+ '\\'Verve Access\\''\n"
+              },
+              "uuid": "e2c1b9ef-c844-4646-b27c-968956b11786",
+              "parentUUID": "f92327b2-30a1-4b10-8273-69b961faed6b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "This test fetches the Dasboard chart for pending artworks",
+              "fullTitle": "visit Verve Access This test fetches the Dasboard chart for pending artworks",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ant-tabs-tab-active > span');\ncy.get(':nth-child(3) > [height=\"263\"]');\ncy.get('.third-section > :nth-child(1)');\ncy.get('.third-section > :nth-child(1)');\ncy.get('.third-section > :nth-child(1)');\nln.setLogout();",
+              "err": {},
+              "uuid": "6c774ef9-7919-4b32-9d71-52a6539d641b",
+              "parentUUID": "f92327b2-30a1-4b10-8273-69b961faed6b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "This test fetches the Dasboard chart for approved artworks",
+              "fullTitle": "visit Verve Access This test fetches the Dasboard chart for approved artworks",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ant-tabs-tab-active > span');\ncy.get(':nth-child(2)>.ant-radio>.ant-radio-input').click();\ncy.get(':nth-child(3) > [y=\"81\"]');\ncy.get('.third-section > :nth-child(1)');\ncy.get('.third-section > :nth-child(2)');\ncy.get('.third-section > :nth-child(3)');\nln.setLogout();",
+              "err": {},
+              "uuid": "1d22774a-a335-4839-b464-23d241b33fba",
+              "parentUUID": "f92327b2-30a1-4b10-8273-69b961faed6b",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e2c1b9ef-c844-4646-b27c-968956b11786"
+          ],
+          "pending": [],
+          "skipped": [
+            "6c774ef9-7919-4b32-9d71-52a6539d641b",
+            "1d22774a-a335-4839-b464-23d241b33fba"
+          ],
+          "duration": 26688,
+=======
+              "title": "Create multiple Artwork Request",
+              "fullTitle": "visit Verve Access Create multiple Artwork Request",
+              "timedOut": null,
+              "duration": 128502,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "ArtworkPage.selSvg().click();\ncy.wait(6000);\nArtworkPage.selArtWork().click();\nArtworkPage.AddArtworkbutton();\ncy.fixture('verve.jpg', {\n  encoding: null\n}).as('myFixture');\ncy.get('input[accept=\".png, .jpg, .jpeg, .pdf, .svg\"]').selectFile('@myFixture', {\n  force: true\n});\ncy.get(\"input[name='fileName']\").clear().type(varTest2.testname);\ncy.get('#createArtwork').click();\ncy.wait(6000);\ncy.contains('Artwork request successfully logged').should('be.visible');\ncy.reload();\nArtworkPage.AddArtworkbutton(); //cy.fixture('verve.jpg', { encoding: null }).as('myFixture')\ncy.get('input[accept=\".png, .jpg, .jpeg, .pdf, .svg\"]').selectFile('@myFixture', {\n  force: true\n});\ncy.get(\"input[name='fileName']\").clear().type(varTest2.newtest);\ncy.get('#createArtwork').click();\ncy.wait(6000);\ncy.contains('Artwork request successfully logged').should('be.visible');\ncy.reload();\nArtworkPage.AddArtworkbutton(); //cy.fixture('verve.jpg', { encoding: null }).as('myFixture')\ncy.get('input[accept=\".png, .jpg, .jpeg, .pdf, .svg\"]').selectFile('@myFixture', {\n  force: true\n});\ncy.get(\"input[name='fileName']\").clear().type('Artwork2023' + varTest.test);\ncy.get('#createArtwork').click();\ncy.wait(6000);\ncy.contains('Artwork request successfully logged').should('be.visible');\ncy.reload();\nArtworkPage.AddArtworkbutton(); //cy.fixture('verve.jpg', { encoding: null }).as('myFixture')\ncy.get('input[accept=\".png, .jpg, .jpeg, .pdf, .svg\"]').selectFile('@myFixture', {\n  force: true\n});\ncy.get(\"input[name='fileName']\").clear().type('Artwork2022' + varTest.test);\ncy.get('#createArtwork').click();\ncy.wait(6000);\ncy.contains('Artwork request successfully logged').should('be.visible');\ncy.reload();\nArtworkPage.AddArtworkbutton(); //cy.fixture('verve.jpg', { encoding: null }).as('myFixture')\ncy.get('input[accept=\".png, .jpg, .jpeg, .pdf, .svg\"]').selectFile('@myFixture', {\n  force: true\n});\ncy.get(\"input[name='fileName']\").clear().type('Artwork2024' + varTest.test);\ncy.get('#createArtwork').click();\ncy.wait(6000);\ncy.contains('Artwork request successfully logged').should('be.visible');\ncy.reload();\nArtworkPage.AddArtworkbutton(); //cy.fixture('verve.jpg', { encoding: null }).as('myFixture')\ncy.get('input[accept=\".png, .jpg, .jpeg, .pdf, .svg\"]').selectFile('@myFixture', {\n  force: true\n});\ncy.get(\"input[name='fileName']\").clear().type('Artwork2021' + varTest.test);\ncy.get('#createArtwork').click();\ncy.wait(6000);\ncy.contains('Artwork request successfully logged').should('be.visible');\ncy.reload();\nln.setLogout();",
+              "err": {},
+              "uuid": "1eb7acef-d24c-4cfe-8400-09a977b8ad38",
+              "parentUUID": "1930b43c-178e-459c-b364-e4c89257740b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1eb7acef-d24c-4cfe-8400-09a977b8ad38"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 128502,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

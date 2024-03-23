@@ -1,0 +1,250 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 6,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-08-21T14:21:50.791Z",
+    "end": "2023-08-21T14:24:33.508Z",
+    "duration": 162717,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9020e740-759b-4c46-86dc-2e79dec2427f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Login.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should test for url and valid CORPORATE_ADMIN logon",
+              "fullTitle": "visit Verve Access should test for url and valid CORPORATE_ADMIN logon",
+              "timedOut": null,
+              "duration": 63982,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'Verve Access');\ncy.location('protocol').should('eq', 'https:'); // /cy.contains('Get Started Now').click({timeout : 2000})\ncy.url().should('include', 'customer');\ncy.reload(); //cy.hash().should('include', '#/auth')\ncy.get('form').within($form => {\n  cy.get('input[type=\"email\"]').type('njoku101@qa.team');\n  cy.get('input[type=\"password\"]').type('Password1@');\n  cy.get('#login').click({\n    timeout: 2000\n  });\n  cy.wait(9000); //cy.root().submit({timeout : 2000})\n});\ncy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('CORPORATE_ADMIN').should('be.visible');\ncy.get('.red').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.ant-dropdown-link > .sidebar-svg`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.ant-dropdown-link > .sidebar-svg`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Login.cy.js:130:8)",
+                "diff": null
+              },
+              "uuid": "dc93b3c8-00fc-407d-b94b-59691cc53768",
+              "parentUUID": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test for invalid username and valid password for Corporate Admin logon",
+              "fullTitle": "visit Verve Access should test for invalid username and valid password for Corporate Admin logon",
+              "timedOut": null,
+              "duration": 9194,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('form').within($form => {\n  cy.get('input[type=\"email\"]').type('VBnjoku101@qa.team');\n  cy.get('input[type=\"password\"]').type('Password1@');\n  cy.get('#login').click().wait(3000); //cy.wait(5000)\n  //cy.root().submit({timeout : 2000})\n});\ncy.contains('ERROR!').should('be.visible');",
+              "err": {},
+              "uuid": "d7b9093b-f6b1-472a-949b-d5442c5b9a19",
+              "parentUUID": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test for valid username and invalid password for Corporate Admin logon",
+              "fullTitle": "visit Verve Access should test for valid username and invalid password for Corporate Admin logon",
+              "timedOut": null,
+              "duration": 13838,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('form').within($form => {\n  cy.get('input[type=\"email\"]').type('njoku101@qa.team');\n  cy.get('input[type=\"password\"]').type('Pass34word1@');\n  cy.get('#login').click().wait(5000); //cy.wait(5000)\n  //cy.root().submit({timeout : 2000})\n});\ncy.contains('ERROR!').should('be.visible');",
+              "err": {},
+              "uuid": "7b43d4b3-2d1e-47e0-8b0d-2a00a9b3b366",
+              "parentUUID": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test for null username and null password for Corporate Admin logon",
+              "fullTitle": "visit Verve Access should test for null username and null password for Corporate Admin logon",
+              "timedOut": null,
+              "duration": 6800,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('form').within($form => {\n  cy.get('input[type=\"email\"]').type(' ');\n  cy.get('input[type=\"password\"]').type(' ');\n  cy.get('#login').click();\n});\ncy.contains('email cannot be empty!').should('be.visible');",
+              "err": {},
+              "uuid": "dfad3a72-6402-4925-baa5-de2175d70508",
+              "parentUUID": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test for url and valid CORPORATE_USER logon",
+              "fullTitle": "visit Verve Access should test for url and valid CORPORATE_USER logon",
+              "timedOut": null,
+              "duration": 35817,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('form').within($form => {\n  cy.get('input[type=\"email\"]').type('njoku102@qa.team');\n  cy.get('input[type=\"password\"]').type('Password1@');\n  cy.get('#login').click({\n    timeout: 2000\n  });\n  cy.wait(9000); //cy.root().submit({timeout : 2000})\n});\ncy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('CORPORATE_USER').should('be.visible');\ncy.get('.red').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.ant-dropdown-link > .sidebar-svg`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.ant-dropdown-link > .sidebar-svg`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Login.cy.js:170:8)",
+                "diff": null
+              },
+              "uuid": "c82d5e5a-423c-40c5-8fff-ba3cb169c83c",
+              "parentUUID": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test for invalid username and valid password for Corporate User logon",
+              "fullTitle": "visit Verve Access should test for invalid username and valid password for Corporate User logon",
+              "timedOut": null,
+              "duration": 11387,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('form').within($form => {\n  cy.get('input[type=\"email\"]').type('VBnjoku102@qa.team');\n  cy.get('input[type=\"password\"]').type('Password1@');\n  cy.get('#login').click().wait(3000); //cy.wait(5000)\n  //cy.root().submit({timeout : 2000})\n});\ncy.contains('ERROR!').should('be.visible');",
+              "err": {},
+              "uuid": "d73810dc-b46b-4418-baee-d74af596896e",
+              "parentUUID": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test for valid username and invalid password for Corporate user logon",
+              "fullTitle": "visit Verve Access should test for valid username and invalid password for Corporate user logon",
+              "timedOut": null,
+              "duration": 14403,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('form').within($form => {\n  cy.get('input[type=\"email\"]').type('njoku102@qa.team');\n  cy.get('input[type=\"password\"]').type('Pass34word1@');\n  cy.get('#login').click().wait(5000); //cy.wait(5000)\n  //cy.root().submit({timeout : 2000})\n});\ncy.contains('ERROR!').should('be.visible');",
+              "err": {},
+              "uuid": "0aebc70c-5a3d-4573-afb5-c6ee6c02919d",
+              "parentUUID": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test for null username and null password for Corporate user logon",
+              "fullTitle": "visit Verve Access should test for null username and null password for Corporate user logon",
+              "timedOut": null,
+              "duration": 6310,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('form').within($form => {\n  cy.get('input[type=\"email\"]').type(' ');\n  cy.get('input[type=\"password\"]').type(' ');\n  cy.get('#login').click();\n});\ncy.contains('email cannot be empty!').should('be.visible');",
+              "err": {},
+              "uuid": "be8729de-6a6d-44c3-94ce-9b31fcbe0f5b",
+              "parentUUID": "eca0c92e-62df-4c56-b1b5-51846fe51705",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d7b9093b-f6b1-472a-949b-d5442c5b9a19",
+            "7b43d4b3-2d1e-47e0-8b0d-2a00a9b3b366",
+            "dfad3a72-6402-4925-baa5-de2175d70508",
+            "d73810dc-b46b-4418-baee-d74af596896e",
+            "0aebc70c-5a3d-4573-afb5-c6ee6c02919d",
+            "be8729de-6a6d-44c3-94ce-9b31fcbe0f5b"
+          ],
+          "failures": [
+            "dc93b3c8-00fc-407d-b94b-59691cc53768",
+            "c82d5e5a-423c-40c5-8fff-ba3cb169c83c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 161731,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

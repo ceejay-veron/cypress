@@ -1,0 +1,286 @@
+{
+  "stats": {
+<<<<<<< HEAD
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-25T13:44:37.307Z",
+    "end": "2023-07-25T13:45:04.176Z",
+    "duration": 26869,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 8,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "328337f4-60a9-499f-8c76-432cf018ccce",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Reports.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Reports.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search by  complete Report Title",
+              "fullTitle": "visit Verve Access Search by  complete Report Title",
+              "timedOut": null,
+              "duration": 26636,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Search by  complete Report Title\nRp.setGoToReportPage2();\nRp.setSearch('unwhitelistcardtemplate - without PAN (1).xls'); //Rp.setVerifySearch('unwhitelistcardtemplate - without PAN (1).xls')\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Reports.cy.js:212:16)",
+                "diff": "- '\\'Dashboard | Verve Access\\''\n+ '\\'Verve Access\\''\n"
+              },
+              "uuid": "99a9cd7a-abcf-4160-8d10-491b9d9049e6",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by  Incomplete Report Title",
+              "fullTitle": "visit Verve Access Search by  Incomplete Report Title",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Search by  Incomplete Report Title\nRp.setGoToReportPage2();\nRp.setSearch('unwhitelistcardtemplate'); // Rp.setVerifySearch('unwhitelistcardtemplate')\nln.setLogout();",
+              "err": {},
+              "uuid": "d4347059-3acc-4b34-bb15-bfecf1f0ed05",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by  non-existing Title",
+              "fullTitle": "visit Verve Access Search by  non-existing Title",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Search by  non-existing Title\nRp.setGoToReportPage2();\nRp.setSearch(\"trjshdjdh udnskvfki\");\nRp.setClickSearch();\nRp.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {},
+              "uuid": "b33390d9-ee30-4c0c-9695-812af5be23ac",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of last 30 days",
+              "fullTitle": "visit Verve Access it should search for Report of last 30 days",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateTolast30days();\nln.setLogout();",
+              "err": {},
+              "uuid": "276623c5-ec42-429a-8b56-661b923a7b12",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of This Month",
+              "fullTitle": "visit Verve Access it should search for Report of This Month",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToThisMonth();\nln.setLogout();",
+              "err": {},
+              "uuid": "b6de5573-a66b-40b0-9e65-a20bda02c0e9",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of last Month",
+              "fullTitle": "visit Verve Access it should search for Report of last Month",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToLastMonth();\nln.setLogout();",
+              "err": {},
+              "uuid": "6becce5d-d983-4b2f-9f3b-d4b1008f2d05",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of Today",
+              "fullTitle": "visit Verve Access it should search for Report of Today",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToToday();\nln.setLogout();",
+              "err": {},
+              "uuid": "9f1c3f67-a120-4455-8d33-5df43ac4adf8",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of Yesterday",
+              "fullTitle": "visit Verve Access it should search for Report of Yesterday",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToYesterday();\nln.setLogout();",
+              "err": {},
+              "uuid": "0e83c5a1-5410-4470-8b61-c37fc49f8368",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of last seven days",
+              "fullTitle": "visit Verve Access it should search for Report of last seven days",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToLast7Days();\nln.setLogout();",
+              "err": {},
+              "uuid": "e8f9abbe-eaf6-4403-b1af-69b4e27fd1d0",
+              "parentUUID": "a1ef0a71-a9ef-44ca-b64a-ba1cfd026053",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "99a9cd7a-abcf-4160-8d10-491b9d9049e6"
+          ],
+          "pending": [],
+          "skipped": [
+            "d4347059-3acc-4b34-bb15-bfecf1f0ed05",
+            "b33390d9-ee30-4c0c-9695-812af5be23ac",
+            "276623c5-ec42-429a-8b56-661b923a7b12",
+            "b6de5573-a66b-40b0-9e65-a20bda02c0e9",
+            "6becce5d-d983-4b2f-9f3b-d4b1008f2d05",
+            "9f1c3f67-a120-4455-8d33-5df43ac4adf8",
+            "0e83c5a1-5410-4470-8b61-c37fc49f8368",
+            "e8f9abbe-eaf6-4403-b1af-69b4e27fd1d0"
+          ],
+          "duration": 26636,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+=======
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-22T15:52:00.211Z",
+    "end": "2023-08-22T15:52:00.214Z",
+    "duration": 3,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    false
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

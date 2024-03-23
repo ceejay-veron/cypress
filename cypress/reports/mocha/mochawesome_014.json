@@ -1,0 +1,314 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-24T15:15:10.724Z",
+    "end": "2023-07-24T15:15:58.164Z",
+    "duration": 47440,
+    "testsRegistered": 1,
+    "passPercent": 0,
+=======
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-22T12:54:45.807Z",
+    "end": "2023-08-22T13:00:30.782Z",
+    "duration": 344975,
+    "testsRegistered": 9,
+    "passPercent": 100,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+<<<<<<< HEAD
+      "uuid": "5628109d-c034-494f-9c8b-822154982cd0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Requests.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Requests.cy.js",
+=======
+      "uuid": "b72fa5cf-fba6-4a5c-bdcf-d8112601afa6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Reports.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Reports.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "23b6a0d1-fd9e-4b3f-a55f-b357f8b31ee5",
+=======
+          "uuid": "699a5bbe-3c5a-476a-8531-4102d908a820",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "Add Request Template without Template and Title",
+              "fullTitle": "visit Verve Access Add Request Template without Template and Title",
+              "timedOut": null,
+              "duration": 47343,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rq.setGoToRequestPage();\ncy.wait(12000);\ncy.get(\"(//span[normalize-space()='Closed'])[1]\").click();\ncy.get('li:nth-child(1) span:nth-child(8)').click(); //(//span[contains(text(),'View')])[1]",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: (//span[normalize-space()='Closed'])[1]",
+                "estack": "Error: Syntax error, unrecognized expression: (//span[normalize-space()='Closed'])[1]\n    at Function.Sizzle.error (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:106295:8)\n    at Sizzle.tokenize (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:106947:11)\n    at Sizzle.select (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107374:20)\n    at Function.Sizzle [as find] (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:105599:9)\n    at jQuery.fn.init.find (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107630:11)\n    at new jQuery.fn.init (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107745:40)\n    at Object.query (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:183650:10)\n    at $Cy.$$ (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:162343:65)\n    at getElements (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157620:20)\n    at tryCatcher (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:13012:23)\n    at Function.Promise.attempt.Promise.try (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:10286:29)\n    at resolveElements (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157670:67)\n    at Context.get (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157681:14)\n    at https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:170360:15\n    at tryCatcher (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromiseCtx (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11041:10)\n    at _drainQueueStep (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7723:12)\n    at _drainQueue (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7712:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7728:5)",
+                "diff": null
+              },
+              "uuid": "e7dcf2e5-1967-4cbd-a444-62b593146b50",
+              "parentUUID": "23b6a0d1-fd9e-4b3f-a55f-b357f8b31ee5",
+=======
+              "title": "it should search for valid report",
+              "fullTitle": "visit Verve Access it should search for valid report",
+              "timedOut": null,
+              "duration": 60712,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setinputValue('Issuer-Reports');\nRp.setSummitButton(); // Rp.setVerify('Issuer-Reports')\nln.setLogout();",
+              "err": {},
+              "uuid": "5e6f75af-3459-4da6-bd2a-c34604a86287",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for invalid report",
+              "fullTitle": "visit Verve Access it should search for invalid report",
+              "timedOut": null,
+              "duration": 36298,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setinputValue('Issuedfdfdr-Reportddds');\nRp.setSummitButton();\nRp.setVerify('No Data to Display');\nln.setLogout();",
+              "err": {},
+              "uuid": "b4e12d4b-2e00-4836-8871-c3a2f9e16e6d",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for empty Value",
+              "fullTitle": "visit Verve Access it should search for empty Value",
+              "timedOut": null,
+              "duration": 34790,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setinputValue(' ');\nRp.setSummitButton(); //Rp.setVerify('No Data to Display')\nln.setLogout();",
+              "err": {},
+              "uuid": "a1333709-7c4c-452a-8aea-26e88a30b67f",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of last 30 days",
+              "fullTitle": "visit Verve Access it should search for Report of last 30 days",
+              "timedOut": null,
+              "duration": 34353,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setselectFilter();\nRp.setDateTolast30days();\nln.setLogout();",
+              "err": {},
+              "uuid": "b88f7281-fb33-47b3-b934-c9d477adbb84",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of This Month",
+              "fullTitle": "visit Verve Access it should search for Report of This Month",
+              "timedOut": null,
+              "duration": 33995,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setselectFilter();\nRp.setDateToThisMonth();\nln.setLogout();",
+              "err": {},
+              "uuid": "77b02ef2-6d34-4608-b849-cb08868495d9",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of last Month",
+              "fullTitle": "visit Verve Access it should search for Report of last Month",
+              "timedOut": null,
+              "duration": 35443,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setselectFilter();\nRp.setDateToLastMonth();\nln.setLogout();",
+              "err": {},
+              "uuid": "6b44dde3-330c-429f-85ec-8e3a81e70c6c",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of Today",
+              "fullTitle": "visit Verve Access it should search for Report of Today",
+              "timedOut": null,
+              "duration": 38070,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setselectFilter();\nRp.setDateToToday();\nln.setLogout();",
+              "err": {},
+              "uuid": "647284ec-6e76-4ec9-ba3d-3b86c070d40e",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of Yesterday",
+              "fullTitle": "visit Verve Access it should search for Report of Yesterday",
+              "timedOut": null,
+              "duration": 34390,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setselectFilter();\nRp.setDateToYesterday();\nln.setLogout();",
+              "err": {},
+              "uuid": "392a2538-1b78-4f75-bb6a-daf88798d5e1",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of last seven days",
+              "fullTitle": "visit Verve Access it should search for Report of last seven days",
+              "timedOut": null,
+              "duration": 35651,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage();\nRp.setselectFilter();\nRp.setDateToLast7Days();\nln.setLogout();",
+              "err": {},
+              "uuid": "2b28b3c9-12e7-4088-b352-1c59c8b2ee08",
+              "parentUUID": "699a5bbe-3c5a-476a-8531-4102d908a820",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+<<<<<<< HEAD
+          "passes": [],
+          "failures": [
+            "e7dcf2e5-1967-4cbd-a444-62b593146b50"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 47343,
+=======
+          "passes": [
+            "5e6f75af-3459-4da6-bd2a-c34604a86287",
+            "b4e12d4b-2e00-4836-8871-c3a2f9e16e6d",
+            "a1333709-7c4c-452a-8aea-26e88a30b67f",
+            "b88f7281-fb33-47b3-b934-c9d477adbb84",
+            "77b02ef2-6d34-4608-b849-cb08868495d9",
+            "6b44dde3-330c-429f-85ec-8e3a81e70c6c",
+            "647284ec-6e76-4ec9-ba3d-3b86c070d40e",
+            "392a2538-1b78-4f75-bb6a-daf88798d5e1",
+            "2b28b3c9-12e7-4088-b352-1c59c8b2ee08"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 343702,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

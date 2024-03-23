@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T09:37:22.075Z",
+    "end": "2023-08-22T09:37:52.322Z",
+    "duration": 30247,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3afb141d-2300-4abd-8ddf-3f06c4071374",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\WhitelistCards.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\WhitelistCards.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b666e58b-a215-49d6-b9fe-c7f7b768b67c",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should Navigate to whitelist cards and search",
+              "fullTitle": "visit Verve Access should Navigate to whitelist cards and search",
+              "timedOut": null,
+              "duration": 29981,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('vervAdminUser'));\n  ln.setPassword(Cypress.env('verveAdminPass'));\n  ln.clickSubmit();\n}); // Search by first three pan number      \nWc.setGoTowhitelistPage();\nWc.setSearch(\"506\");\nWc.setVerifySearch(\"506\");\ncy.reload(); // Search by last four pan number\nWc.setGoTowhitelistPage();\nWc.setSearch(\"1858\");\nWc.setVerifySearch(\"1858\");\ncy.reload(); // Serach by innvalid parameter \nWc.setGoTowhitelistPage();\nWc.setSearch(\"xxxxx903567\");\nWc.setVerifySearch(\"No Data to Display\");\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\WhitelistCards.cy.js:373:8)",
+                "diff": null
+              },
+              "uuid": "697e12f8-2bbe-4ba4-a968-35e944c0baa9",
+              "parentUUID": "b666e58b-a215-49d6-b9fe-c7f7b768b67c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "697e12f8-2bbe-4ba4-a968-35e944c0baa9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29981,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

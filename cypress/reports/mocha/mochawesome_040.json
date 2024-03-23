@@ -1,0 +1,459 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 5,
+    "passes": 0,
+    "pending": 0,
+    "failures": 5,
+    "start": "2023-07-25T13:33:02.279Z",
+    "end": "2023-07-25T13:38:18.494Z",
+    "duration": 316215,
+    "testsRegistered": 5,
+    "passPercent": 0,
+=======
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-22T15:03:38.995Z",
+    "end": "2023-08-22T15:11:06.964Z",
+    "duration": 447969,
+    "testsRegistered": 12,
+    "passPercent": 100,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+<<<<<<< HEAD
+      "uuid": "61427c71-45a9-49ef-9c05-0b4d3cdfda45",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\VMMR.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\VMMR.cy.js",
+=======
+      "uuid": "ddf63d1e-7847-4e2a-b7a4-552f1b77747b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "62533eeb-d51a-48f6-afb5-ba22c01dcbb5",
+=======
+          "uuid": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "This test logs the corporate user into the Verve Access portal to search Pending reports",
+              "fullTitle": "visit Verve Access This test logs the corporate user into the Verve Access portal to search Pending reports",
+              "timedOut": null,
+              "duration": 62611,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(1) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('oge@qa.team');\ncy.get(':nth-child(2) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('PASSWORD@123');\ncy.get('#login').click();\ncy.wait(16000);\ncy.get('#burger-cont').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(11) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click();\ncy.reload(); //To search for a pending report by reportName\ncy.get('.input-container').type('PRO-DEC-VMMR-PLAIN');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('PRO-DEC-VMMR-PLAIN-01');\ncy.reload(); //To search for a pending report by Corporate user's Name\ncy.get('.input-container').type('Olanre');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('Joe Olanre');\ncy.reload(); //To search for a pending report by Approver's Name\ncy.get('.input-container').type('Oge');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('No data to display');\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\VMMR.cy.js:115:8)",
+                "diff": null
+              },
+              "uuid": "9820ee66-9bc1-4748-b5da-349f1b3cdcfd",
+              "parentUUID": "62533eeb-d51a-48f6-afb5-ba22c01dcbb5",
+=======
+              "title": "should Verify User Role",
+              "fullTitle": "visit Verve Access should Verify User Role",
+              "timedOut": null,
+              "duration": 48910,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('CORPORATE_ADMIN').should('be.visible');\ncy.get('.red').click();\ncy.wait(6000); //ln.setLogout()",
+              "err": {},
+              "uuid": "8aa97c64-7a3b-4103-b3f7-cd1e1e330e5c",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            },
+            {
+<<<<<<< HEAD
+              "title": "This logs the corporate user into the verve access portal searches approved reports",
+              "fullTitle": "visit Verve Access This logs the corporate user into the verve access portal searches approved reports",
+              "timedOut": null,
+              "duration": 61976,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://verve-access-customer.k8.isw.la/corporate/signin');\ncy.get(':nth-child(1) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('oge@qa.team');\ncy.get(':nth-child(2) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('PASSWORD@123');\ncy.get('#login').click();\ncy.wait(16000);\ncy.get('#burger-cont').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(11) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); //To search for an approved report by reportName\ncy.get('.ant-tabs-nav > :nth-child(1) > :nth-child(2) > span').click();\ncy.get('.input-container').type('PRO-DEC-VMMR-TEST');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('PRO-DEC-VMMR-TEST-02');\ncy.get('.input-container').clear(); //To search approved reports by Corporate User's name\ncy.get('.ant-tabs-nav > :nth-child(1) > :nth-child(2) > span').click();\ncy.get('.input-container').type('Joe');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('Joe Olanre'); //To search approved reports by Corporate_Admin's Name\ncy.get('.input-container').clear().type('Oge');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('No data to display');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\VMMR.cy.js:143:8)",
+                "diff": null
+              },
+              "uuid": "4f61c710-01d2-4f9b-b174-0d23dd5201ab",
+              "parentUUID": "62533eeb-d51a-48f6-afb5-ba22c01dcbb5",
+=======
+              "title": "should View guides section from the dashboard after login ",
+              "fullTitle": "visit Verve Access should View guides section from the dashboard after login ",
+              "timedOut": null,
+              "duration": 32923,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Views the guides section, views all categories from the dashboard and views category guides from the dashboard\nguide.GetDashboardGuidesSection();\nguide.ViewAllGuidesFromDashboard();\nguide.ViewCategoryGuidesFromDashboard();\nln.setLogout();",
+              "err": {},
+              "uuid": "016fdfb8-0a4c-444c-b783-7c4fd70ac453",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            },
+            {
+<<<<<<< HEAD
+              "title": "This logs the corporate user into the verve access portal searches declined reports",
+              "fullTitle": "visit Verve Access This logs the corporate user into the verve access portal searches declined reports",
+              "timedOut": null,
+              "duration": 62801,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://verve-access-customer.k8.isw.la/corporate/signin');\ncy.get(':nth-child(1) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('oge@qa.team');\ncy.get(':nth-child(2) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('PASSWORD@123');\ncy.get('#login').click();\ncy.wait(16000);\ncy.get('#burger-cont').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(11) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); //To search for a declined report by reportName\ncy.get('.ant-tabs-nav > :nth-child(1) > :nth-child(3) > span').click();\ncy.get('.input-container').type('PRO-DEC-VMMR-PLAIN');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('PRO-DEC-VMMR-PLAIN-02'); //To search declined reports by Corporate User's name\ncy.get('.input-container').clear().type('Joe');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('Joe Olanre'); //To search declined reports by Corporate_Admin's Name\ncy.get('.input-container').clear().type('Oge');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('No data to display');\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\VMMR.cy.js:170:8)",
+                "diff": null
+              },
+              "uuid": "4451a877-67bc-45cc-9856-8bf0c4741152",
+              "parentUUID": "62533eeb-d51a-48f6-afb5-ba22c01dcbb5",
+=======
+              "title": "should view the guides page ",
+              "fullTitle": "visit Verve Access should view the guides page ",
+              "timedOut": null,
+              "duration": 33763,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//View the Guides Page\nguide.GoToAdminGuidesPage();\nln.setLogout();",
+              "err": {},
+              "uuid": "e4dbed27-dcfa-4424-8aef-89cbfae4568a",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            },
+            {
+<<<<<<< HEAD
+              "title": "This logs the corporate user into the verve access portal searches failed reports",
+              "fullTitle": "visit Verve Access This logs the corporate user into the verve access portal searches failed reports",
+              "timedOut": null,
+              "duration": 65431,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://verve-access-customer.k8.isw.la/corporate/signin');\ncy.get(':nth-child(1) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('oge@qa.team');\ncy.get(':nth-child(2) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('PASSWORD@123');\ncy.get('#login').click();\ncy.wait(16000);\ncy.get('#burger-cont').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(11) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); //To search for a declined report by reportName\ncy.get('.ant-tabs-nav > :nth-child(1) > :nth-child(4) > span').click();\ncy.get('.input-container').type('VMMR Report - FNF');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('VMMR Report - FNF'); //To search declined reports by Corporate User's name\ncy.get('.input-container').clear().type('Joe');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('Joe Olanre'); //To search declined reports by Corporate_Admin's Name\ncy.get('.input-container').clear().type('Oge');\ncy.get('.input-container > .d-flx').click();\ncy.wait(4000);\ncy.contains('No data to display');\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\VMMR.cy.js:196:8)",
+                "diff": null
+              },
+              "uuid": "269f44a8-5a90-430a-ab07-4e5f7ad72069",
+              "parentUUID": "62533eeb-d51a-48f6-afb5-ba22c01dcbb5",
+=======
+              "title": "should view the category guides page ",
+              "fullTitle": "visit Verve Access should view the category guides page ",
+              "timedOut": null,
+              "duration": 33689,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//View the Guides uploaded for the selected category\nguide.GoToAdminCategoryGuidesPage();\nln.setLogout();",
+              "err": {},
+              "uuid": "8b51ebb5-6d2d-488b-a53c-0885f89f29cc",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            },
+            {
+<<<<<<< HEAD
+              "title": "This logs the corporate user into the verve access portal and filters Pending VMMR Reports by date range",
+              "fullTitle": "visit Verve Access This logs the corporate user into the verve access portal and filters Pending VMMR Reports by date range",
+              "timedOut": null,
+              "duration": 62832,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://verve-access-customer.k8.isw.la/corporate/signin');\ncy.get(':nth-child(1) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('oge@qa.team');\ncy.get(':nth-child(2) > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').type('PASSWORD@123');\ncy.get('#login').click();\ncy.wait(16000);\ncy.get('#burger-cont').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(11) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); //To Filter Pending reports by Date - Today\ncy.get('.anticon-caret-down > svg > path').click();\ncy.get('.ranges > ul > .active').click();\ncy.wait(4000);\ncy.reload(); //To Filter Pending reports by Date - Yesterday\ncy.get('.anticon-caret-down > svg > path').click();\ncy.get('[data-range-key=\"Yesterday\"]').click();\ncy.wait(4000);\ncy.reload(); //To Filter Pending reports by Date - Last Seven Days \ncy.get('.anticon-caret-down > svg > path').click();\ncy.get('[data-range-key=\"Last 7 Days\"]').click();\ncy.wait(4000);\ncy.reload(); //To Filter Pending reports by Date - Last Thirty Days \ncy.get('.anticon-caret-down > svg > path').click();\ncy.get('[data-range-key=\"Last 30 Days\"]').click();\ncy.wait(4000);\ncy.reload(); //To Filter Pending reports by Date - This Month \ncy.get('.anticon-caret-down > svg > path').click();\ncy.get('[data-range-key=\"This Month\"]').click();\ncy.wait(4000);\ncy.reload(); //To Filter Pending reports by Date - Last Month \ncy.get('.anticon-caret-down > svg > path').click();\ncy.get('[data-range-key=\"Last Month\"]').click();\ncy.wait(4000);\ncy.reload(); //To Filter Pending reports by Date - Custom Date Range \ncy.get('.anticon-caret-down > svg > path').click();\ncy.get('[data-range-key=\"Custom Range\"]').click();\ncy.get('.left > .calendar-table > .table-condensed > tbody > :nth-child(1) > [data-title=\"r0c1\"]').click();\ncy.get('.right > .calendar-table > .table-condensed > tbody > :nth-child(4) > [data-title=\"r3c5\"]').click();\ncy.get('.applyBtn').click();\ncy.wait(4000);\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\VMMR.cy.js:222:8)",
+                "diff": null
+              },
+              "uuid": "a4610b75-8b65-4083-b4f8-7869e18dc9a2",
+              "parentUUID": "62533eeb-d51a-48f6-afb5-ba22c01dcbb5",
+=======
+              "title": "should download selected guide from a category ",
+              "fullTitle": "visit Verve Access should download selected guide from a category ",
+              "timedOut": null,
+              "duration": 48913,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Download an uploaded guide\nguide.DownloadAdminGuide();\ncy.wait(16000);\nln.setLogout();",
+              "err": {},
+              "uuid": "db9072e7-9257-4e1d-b642-a66453c06fe6",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for an existing category ",
+              "fullTitle": "visit Verve Access should search for an existing category ",
+              "timedOut": null,
+              "duration": 36322,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Search for an existing category on the Guides Page\nguide.GoToAdminGuidesPage();\nguide.SearchGuides('Scheme Rules');\nguide.SetVerifySearch('Scheme Rules');\nln.setLogout();",
+              "err": {},
+              "uuid": "a67db276-ac28-443e-b4c7-e314e22d968d",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for a non-existing category ",
+              "fullTitle": "visit Verve Access should search for a non-existing category ",
+              "timedOut": null,
+              "duration": 36289,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Search for a non-existing category on the Guides Page\nguide.GoToAdminGuidesPage();\nguide.SearchGuides('Non-existing Category');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {},
+              "uuid": "78d81432-2bf0-432f-a0b0-378a8dfd5ce0",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for an existing category without guides uploaded for the organizationType",
+              "fullTitle": "visit Verve Access should search for an existing category without guides uploaded for the organizationType",
+              "timedOut": null,
+              "duration": 36687,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Search for a existing category on the Guides Page that does not have categories uploaded for the user's organization type\nguide.GoToAdminGuidesPage();\nguide.SearchGuides('Card Perso Category');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {},
+              "uuid": "b5a24a0c-caeb-4c49-9ffe-35b170c5e778",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for existing guides within a category ",
+              "fullTitle": "visit Verve Access should search for existing guides within a category ",
+              "timedOut": null,
+              "duration": 34365,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Search for guides existing within the selected category\nguide.GoToAdminCategoryGuidesPage();\nguide.SearchGuides('Verve Scheme_Guides');\nguide.SetVerifySearch('Verve Scheme_Guides');\nln.setLogout();",
+              "err": {},
+              "uuid": "d0c30332-8b64-4bab-9b94-edc6be3fc8b8",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for guides not existing within the selected category ",
+              "fullTitle": "visit Verve Access should search for guides not existing within the selected category ",
+              "timedOut": null,
+              "duration": 35171,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Search for guides not existing within the selected category but uploaded for the same organization Type of the user\nguide.GoToAdminCategoryGuidesPage();\nguide.SearchGuides('Issuer_Guides-88590');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {},
+              "uuid": "c1929c64-a8f5-4bf2-aa9d-db7e31728bbb",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for existing guides within a category uploaded for a different organization type",
+              "fullTitle": "visit Verve Access should search for existing guides within a category uploaded for a different organization type",
+              "timedOut": null,
+              "duration": 35106,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Search for guides existing within the selected category but uploaded for a different organization Type\nguide.GoToAdminCategoryGuidesPage();\nguide.SearchGuides('Corporate_Guides-63694');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {},
+              "uuid": "738f97ef-26d1-42a3-8ab8-b9e7ec302cba",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for existing guides within a category uploaded for a different organization type",
+              "fullTitle": "visit Verve Access should search for existing guides within a category uploaded for a different organization type",
+              "timedOut": null,
+              "duration": 35255,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Search for non-existing guides\nguide.GoToAdminCategoryGuidesPage();\nguide.SearchGuides('UserManual00001');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {},
+              "uuid": "5865e127-467c-42f1-a27a-8714af0ad35c",
+              "parentUUID": "0516b53a-dab7-4d5f-941b-20c5304b37e5",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+<<<<<<< HEAD
+          "passes": [],
+          "failures": [
+            "9820ee66-9bc1-4748-b5da-349f1b3cdcfd",
+            "4f61c710-01d2-4f9b-b174-0d23dd5201ab",
+            "4451a877-67bc-45cc-9856-8bf0c4741152",
+            "269f44a8-5a90-430a-ab07-4e5f7ad72069",
+            "a4610b75-8b65-4083-b4f8-7869e18dc9a2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 315651,
+=======
+          "passes": [
+            "8aa97c64-7a3b-4103-b3f7-cd1e1e330e5c",
+            "016fdfb8-0a4c-444c-b783-7c4fd70ac453",
+            "e4dbed27-dcfa-4424-8aef-89cbfae4568a",
+            "8b51ebb5-6d2d-488b-a53c-0885f89f29cc",
+            "db9072e7-9257-4e1d-b642-a66453c06fe6",
+            "a67db276-ac28-443e-b4c7-e314e22d968d",
+            "78d81432-2bf0-432f-a0b0-378a8dfd5ce0",
+            "b5a24a0c-caeb-4c49-9ffe-35b170c5e778",
+            "d0c30332-8b64-4bab-9b94-edc6be3fc8b8",
+            "c1929c64-a8f5-4bf2-aa9d-db7e31728bbb",
+            "738f97ef-26d1-42a3-8ab8-b9e7ec302cba",
+            "5865e127-467c-42f1-a27a-8714af0ad35c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 447393,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

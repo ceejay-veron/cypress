@@ -1,0 +1,170 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T10:59:15.687Z",
+    "end": "2023-08-22T10:59:47.106Z",
+    "duration": 31419,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "34a2f2d5-8333-4502-b26a-6da57da256c3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Departments.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Departments.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f407eb9-079d-4125-94ac-373c2b4a5767",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should Add Department",
+              "fullTitle": "visit Verve Access should Add Department",
+              "timedOut": null,
+              "duration": 30892,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "dp.setGoToDepartmentPage();\ndp.setAddButton();\ndp.setAddDepartButton(varTest.test + varTest2.newname);\ndp.setSuccessMessage();\ncy.reload();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Departments.cy.js:212:16)",
+                "diff": "- '\\'Dashboard | Verve Access\\''\n+ '\\'Verve Access\\''\n"
+              },
+              "uuid": "2d18853f-6173-48f9-a10a-65ff236f3102",
+              "parentUUID": "8f407eb9-079d-4125-94ac-373c2b4a5767",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should Search by Complete Department",
+              "fullTitle": "visit Verve Access should Search by Complete Department",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dp.setGoToDepartmentPage();\ndp.setSearch(varTest.test + varTest2.newname);\ndp.setVerifySearch(varTest.test + varTest2.newname);\ncy.reload();\nln.setLogout();",
+              "err": {},
+              "uuid": "02348417-2093-4e22-bc81-fea27ebdc749",
+              "parentUUID": "8f407eb9-079d-4125-94ac-373c2b4a5767",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should Search by incomplete Department",
+              "fullTitle": "visit Verve Access should Search by incomplete Department",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dp.setGoToDepartmentPage();\ndp.setSearch(varTest.test);\ndp.setVerifySearch(varTest.test);\ncy.reload();\nln.setLogout();",
+              "err": {},
+              "uuid": "5aabddcb-b5e6-4b23-b474-1886a97d3847",
+              "parentUUID": "8f407eb9-079d-4125-94ac-373c2b4a5767",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should Search by invalid Department",
+              "fullTitle": "visit Verve Access should Search by invalid Department",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dp.setGoToDepartmentPage();\ndp.setSearch(\"trjshdjdh udnskvfki\");\ndp.setVerifySearch(\"No Data to Display\");\ncy.reload();\nln.setLogout();",
+              "err": {},
+              "uuid": "80fc6171-1cd8-49cc-ba98-ca76b268f09a",
+              "parentUUID": "8f407eb9-079d-4125-94ac-373c2b4a5767",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2d18853f-6173-48f9-a10a-65ff236f3102"
+          ],
+          "pending": [],
+          "skipped": [
+            "02348417-2093-4e22-bc81-fea27ebdc749",
+            "5aabddcb-b5e6-4b23-b474-1886a97d3847",
+            "80fc6171-1cd8-49cc-ba98-ca76b268f09a"
+          ],
+          "duration": 30892,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

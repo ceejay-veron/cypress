@@ -1,0 +1,208 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T13:58:33.368Z",
+    "end": "2023-08-22T14:05:38.778Z",
+    "duration": 425410,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c28c5f0a-004f-4c55-9c96-0c69aeb7d576",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Requests.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Requests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "da281a51-4267-454b-b192-6cf88138fe82",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should Create Request with single file",
+              "fullTitle": "visit Verve Access it should Create Request with single file",
+              "timedOut": null,
+              "duration": 108521,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rq.setGoToRequestPage();\ncy.wait(6000);\nRq.setCreateRequest();\nRq.setRequestType();\nRq.SetPath('Verve-AID-FORM_OK.pdf', 'myFixture');\nRq.setAttachFile('@myFixture');\nRq.SetComment('My corporate comment for Request');\nRq.SetSummit();\ncy.wait(33000);\nRq.SetVerifyUpload('Request submitted successfully');\nln.setLogout();",
+              "err": {},
+              "uuid": "666699da-45d3-4145-83f3-425685daff4f",
+              "parentUUID": "da281a51-4267-454b-b192-6cf88138fe82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should Create Request with Multiple file",
+              "fullTitle": "visit Verve Access it should Create Request with Multiple file",
+              "timedOut": null,
+              "duration": 100088,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rq.setGoToRequestPage();\ncy.wait(6000);\nRq.setCreateRequest();\nRq.setRequestType();\nRq.SetPath('Verve-AID-FORM_OK.pdf', 'myFixture');\nRq.SetPath('Verve-IPK-CERT_OK.pdf', 'myFixture2');\nRq.setAttachFile2('@myFixture', '@myFixture2');\nRq.SetComment('My corporate comment for Request');\nRq.SetSummit();\ncy.wait(40000);\nRq.SetVerifyUpload('Request submitted successfully');\nln.setLogout();",
+              "err": {},
+              "uuid": "4dd9e056-e226-4cb8-9f75-5ade48102d19",
+              "parentUUID": "da281a51-4267-454b-b192-6cf88138fe82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should not Create Request without Request Type",
+              "fullTitle": "visit Verve Access it should not Create Request without Request Type",
+              "timedOut": null,
+              "duration": 41926,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rq.setGoToRequestPage();\ncy.wait(6000);\nRq.setCreateRequest(); // Rq.setRequestType()\nRq.SetPath('Verve-AID-FORM_OK.pdf', 'myFixture');\nRq.setAttachFile('@myFixture');\nRq.SetComment('My corporate comment for Request'); // Rq.SetSummit()\n// cy.wait(33000)\n// Rq.SetVerifyUpload('Request submitted successfully')\nRq.setCloseTab();\nln.setLogout();",
+              "err": {},
+              "uuid": "5c55cba5-1657-4df7-ac7a-76851974dad0",
+              "parentUUID": "da281a51-4267-454b-b192-6cf88138fe82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should not Create Request without file",
+              "fullTitle": "visit Verve Access it should not Create Request without file",
+              "timedOut": null,
+              "duration": 53448,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rq.setGoToRequestPage();\ncy.wait(6000);\nRq.setCreateRequest();\nRq.setRequestType(); //Rq.SetPath('Verve-AID-FORM_OK.pdf' , 'myFixture')\n//Rq.setAttachFile('@myFixture')\nRq.SetComment('My corporate comment for Request'); //Rq.SetSummit()\n// cy.wait(33000)\n//Rq.SetVerifyUpload('Request submitted successfully')\nRq.setCloseTab();\nln.setLogout();",
+              "err": {},
+              "uuid": "e7c59c3a-b125-48f3-9bb3-084824d75359",
+              "parentUUID": "da281a51-4267-454b-b192-6cf88138fe82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should Close Request Tab after filling form",
+              "fullTitle": "visit Verve Access it should Close Request Tab after filling form",
+              "timedOut": null,
+              "duration": 53511,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rq.setGoToRequestPage();\ncy.wait(6000);\nRq.setCreateRequest();\nRq.setRequestType();\nRq.SetPath('Verve-AID-FORM_OK.pdf', 'myFixture');\nRq.setAttachFile('@myFixture');\nRq.SetComment('My corporate comment for Request'); //Rq.SetSummit()\n//cy.wait(33000)\n// Rq.SetVerifyUpload('Request submitted successfully')\nRq.setCloseTab();\nln.setLogout();",
+              "err": {},
+              "uuid": "db3e24d1-da10-4600-a69f-8f5ca8d4916c",
+              "parentUUID": "da281a51-4267-454b-b192-6cf88138fe82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should Create Request without Comment",
+              "fullTitle": "visit Verve Access it should Create Request without Comment",
+              "timedOut": null,
+              "duration": 67124,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rq.setGoToRequestPage();\ncy.wait(6000);\nRq.setCreateRequest();\nRq.setRequestType();\nRq.SetPath('Verve-AID-FORM_OK.pdf', 'myFixture');\nRq.setAttachFile('@myFixture'); // Rq.SetComment('My corporate comment for Request')\ncy.wait(6000);\nRq.SetSummit();\ncy.wait(33000);\nRq.SetVerifyUpload('Request submitted successfully');\nln.setLogout();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 20050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button id=\"Save\" data-buttontarget=\"final-submit-button\" disabled=\"\" class=\"upload-request-btn custom-button dot false\">...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 20050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button id=\"Save\" data-buttontarget=\"final-submit-button\" disabled=\"\" class=\"upload-request-btn custom-button dot false\">...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureNotDisabled (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:161792:76)\n    at runAllChecks (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:147668:14)\n    at retryActionability (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:147745:16)\n    at tryCatcher (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:13012:23)\n    at Function.Promise.attempt.Promise.try (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:10286:29)\n    at whenStable (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:166930:65)\n    at https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:166385:14\n    at tryCatcher (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromise0 (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11049:10)\n    at Promise._settlePromises (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11129:18)\n    at Promise._fulfill (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11073:18)\n    at https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:12687:46\nFrom Your Spec Code:\n    at Request.SetSummit (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Requests.cy.js:447:21)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Requests.cy.js:327:8)",
+                "diff": null
+              },
+              "uuid": "52df1731-534c-4e8b-b154-9163fbefa96e",
+              "parentUUID": "da281a51-4267-454b-b192-6cf88138fe82",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "666699da-45d3-4145-83f3-425685daff4f",
+            "4dd9e056-e226-4cb8-9f75-5ade48102d19",
+            "5c55cba5-1657-4df7-ac7a-76851974dad0",
+            "e7c59c3a-b125-48f3-9bb3-084824d75359",
+            "db3e24d1-da10-4600-a69f-8f5ca8d4916c"
+          ],
+          "failures": [
+            "52df1731-534c-4e8b-b154-9163fbefa96e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 424618,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

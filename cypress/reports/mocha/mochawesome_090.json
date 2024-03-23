@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T09:35:02.959Z",
+    "end": "2023-08-22T09:35:47.123Z",
+    "duration": 44164,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1c77d9c9-ee0c-4a9a-bcb6-eccb82693ed5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Requests.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Requests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cbada974-5897-4a4c-98b8-c842fd1e3eaf",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add Request Template without Template and Title",
+              "fullTitle": "visit Verve Access Add Request Template without Template and Title",
+              "timedOut": null,
+              "duration": 43969,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rq.setGoToRequestPage();\ncy.wait(12000);\ncy.get(\"(//span[normalize-space()='Closed'])[1]\").click();\ncy.get('li:nth-child(1) span:nth-child(8)').click(); //(//span[contains(text(),'View')])[1]",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: (//span[normalize-space()='Closed'])[1]",
+                "estack": "Error: Syntax error, unrecognized expression: (//span[normalize-space()='Closed'])[1]\n    at Function.Sizzle.error (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:106295:8)\n    at Sizzle.tokenize (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:106947:11)\n    at Sizzle.select (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107374:20)\n    at Function.Sizzle [as find] (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:105599:9)\n    at jQuery.fn.init.find (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107630:11)\n    at new jQuery.fn.init (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107745:40)\n    at Object.query (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:183650:10)\n    at $Cy.$$ (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:162343:65)\n    at getElements (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157620:20)\n    at tryCatcher (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:13012:23)\n    at Function.Promise.attempt.Promise.try (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:10286:29)\n    at resolveElements (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157670:67)\n    at Context.get (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157681:14)\n    at https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:170360:15\n    at tryCatcher (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromiseCtx (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11041:10)\n    at _drainQueueStep (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7723:12)\n    at _drainQueue (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7712:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7728:5)",
+                "diff": null
+              },
+              "uuid": "787dc332-5348-42fd-aa4c-e8d36e7e70f0",
+              "parentUUID": "cbada974-5897-4a4c-98b8-c842fd1e3eaf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "787dc332-5348-42fd-aa4c-e8d36e7e70f0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 43969,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

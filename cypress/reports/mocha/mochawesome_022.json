@@ -1,0 +1,800 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-07-24T15:23:08.681Z",
+    "end": "2023-07-24T15:24:33.497Z",
+    "duration": 84816,
+    "testsRegistered": 11,
+=======
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T14:10:13.814Z",
+    "end": "2023-08-22T14:11:02.789Z",
+    "duration": 48975,
+    "testsRegistered": 27,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+<<<<<<< HEAD
+    "skipped": 9,
+=======
+    "skipped": 26,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "hasSkipped": true
+  },
+  "results": [
+    {
+<<<<<<< HEAD
+      "uuid": "4c95f9c5-31f0-44e0-ba75-9a705263aa8d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js",
+=======
+      "uuid": "e8328be2-10f0-443a-8191-38049fe29d48",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\CMS.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\CMS.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+          "uuid": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "should Request Decals",
+              "fullTitle": "visit Verve Access should Request Decals",
+              "timedOut": null,
+              "duration": 63591,
+=======
+              "title": "should Verify User Role",
+              "fullTitle": "visit Verve Access should Verify User Role",
+              "timedOut": null,
+              "duration": 48576,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setRequestDecals();\nDC.setSelectDecals();\ncy.wait(6000);\nDC.setInputValue(varTest.number);\nDC.setSubmitDecalButton();\nDC.setVerifyRequest('Decal request has been submitted for approval.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#outlined-multiline-flexible`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#outlined-multiline-flexible`, but never found it.\n    at Decal.setInputValue (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js:228:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js:376:8)",
+                "diff": null
+              },
+              "uuid": "9f4b5ec4-e887-4277-ae31-43e7d01a3db8",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "cy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('VERVE ADMIN').should('be.visible');\ncy.get('.red').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\CMS.cy.js:523:16)",
+                "diff": "- '\\'Dashboard | Verve Access\\''\n+ '\\'Verve Access\\''\n"
+              },
+              "uuid": "fd2d915b-bb26-4108-bd00-26bd75dc31b0",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            },
+            {
+<<<<<<< HEAD
+              "title": "should not Request Decals without ",
+              "fullTitle": "visit Verve Access should not Request Decals without ",
+              "timedOut": null,
+              "duration": 20754,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "DC.setGoToDecalPage();\nDC.setRequestDecals();\nDC.setSelectDecals(); // DC.setInputValue(varTest.number)\nDC.setSubmitDecalButton(); //DC.setVerifyRequest('Decal request has been submitted for approval.')\nDC.setCloseModal();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[type=\"email\"]`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[type=\"email\"]`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Login.setUserName (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js:284:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js:365:10)",
+                "diff": null
+              },
+              "uuid": "c515502e-d539-4364-836e-af7935f784e3",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should Search for complete decal on Approved tab ",
+              "fullTitle": "visit Verve Access should Search for complete decal on Approved tab ",
+=======
+              "title": "should View the dashboard section of the CMS page ",
+              "fullTitle": "visit Verve Access should View the dashboard section of the CMS page ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setinputSearch('Decal Item 41891');\nDC.setsearch();\nDC.setVerifyRequest('Decal Item 41891');\nln.setLogout();",
+              "err": {},
+              "uuid": "59289603-5f0a-45d7-809b-d5ecf2dcb2e3",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Navigates to the Guides section of the CMS page\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\nln.setLogout();",
+              "err": {},
+              "uuid": "a6756d8f-2652-4831-83f0-47b3ed300e9b",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "should Search for incomplete decal on Approved tab",
+              "fullTitle": "visit Verve Access should Search for incomplete decal on Approved tab",
+=======
+              "title": "should update the dashboard page title for corporates ",
+              "fullTitle": "visit Verve Access should update the dashboard page title for corporates ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setinputSearch('Decal It');\nDC.setsearch();\nDC.setVerifyRequest('Decal It');\nln.setLogout();",
+              "err": {},
+              "uuid": "5a003f77-e596-4c3c-8951-5c0dba54432d",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Updates the page title for the dashboard for users belonging to corporate institutions\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.UpdateCorporateDashboardTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "9ebb58db-3d73-403c-a5f4-94f2e458478d",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "should Search for invalid decal on Approved tab",
+              "fullTitle": "visit Verve Access should Search for invalid decal on Approved tab",
+=======
+              "title": "should update the dashboard page title for issuers ",
+              "fullTitle": "visit Verve Access should update the dashboard page title for issuers ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setinputSearch('blahdadka amdakdja');\nDC.setsearch();\nDC.setVerifyRequest('No Data to Display');\nln.setLogout();",
+              "err": {},
+              "uuid": "036fdd71-f6b5-4395-9929-3dca5ed14400",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Updates the page title for the dashboard for users belonging to issuer institutions\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.UpdateIssuerDashboardTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "0243fabd-4baa-46a4-af4d-3994161e9344",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "should Search for complete decal on Pending tab ",
+              "fullTitle": "visit Verve Access should Search for complete decal on Pending tab ",
+=======
+              "title": "should update the dashboard page title for acquirers ",
+              "fullTitle": "visit Verve Access should update the dashboard page title for acquirers ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setPendingTab();\nDC.setinputSearch('Decal Item 87545');\nDC.setsearch();\nDC.setVerifyRequest('Decal Item 87545');\nln.setLogout();",
+              "err": {},
+              "uuid": "eef687ce-1233-4806-aa42-07bf9865c155",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Updates the page title for the dashboard for users belonging to acquirer institutions\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.UpdateAcquirerDashboardTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "c0ef21ef-a2bc-4d86-9390-fe9cb078c7cc",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "should Search for incomplete decal on Pending  tab",
+              "fullTitle": "visit Verve Access should Search for incomplete decal on Pending  tab",
+=======
+              "title": "should update the dashboard page title for card persos ",
+              "fullTitle": "visit Verve Access should update the dashboard page title for card persos ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setPendingTab();\nDC.setinputSearch('Decal It');\nDC.setsearch();\nDC.setVerifyRequest('Decal It');\nln.setLogout();",
+              "err": {},
+              "uuid": "224e6fc3-2858-45f8-b0b5-8da872b92ee4",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Updates the page title for the dashboard for users belonging to card personalization institutions\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.UpdatePersoDashboardTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "253faef6-3098-4de4-82cd-d1996e3ad24e",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "should Search for invalid decal on Pending  tab",
+              "fullTitle": "visit Verve Access should Search for invalid decal on Pending  tab",
+=======
+              "title": "should update the artwork page title for corporates ",
+              "fullTitle": "visit Verve Access should update the artwork page title for corporates ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setPendingTab();\nDC.setinputSearch('blahdadka amdakdja');\nDC.setsearch();\nDC.setVerifyRequest('No Data to Display');\nln.setLogout();",
+              "err": {},
+              "uuid": "d113fe32-eb96-42f3-a3dd-85d8119cb010",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Updates the page title for the artwork page for users belonging to corporate institutions\ncm.setGoTocmsPage();\ncm.setGoToArtworkSection();\ncm.UpdateCorporateArtworkPageTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "10380a73-ad5c-4282-8463-41edaccec20f",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "should Search for complete decal on Rejected tab ",
+              "fullTitle": "visit Verve Access should Search for complete decal on Rejected tab ",
+=======
+              "title": "should update the artwork page title for issuers ",
+              "fullTitle": "visit Verve Access should update the artwork page title for issuers ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setRejectedTab();\nDC.setinputSearch('Decal Item 53890');\nDC.setsearch();\nDC.setVerifyRequest('Decal Item 53890');\nln.setLogout();",
+              "err": {},
+              "uuid": "1d822dc3-ab80-411f-a42e-b2754b659cde",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Updates the page title for the artwork page for users belonging to issuer institutions\ncm.setGoTocmsPage();\ncm.setGoToArtworkSection();\ncm.UpdateIssuerArtworkPageTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "17551512-8481-45d2-bbd5-8019d22e7354",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "should Search for incomplete decal on Rejected  tab",
+              "fullTitle": "visit Verve Access should Search for incomplete decal on Rejected  tab",
+=======
+              "title": "should update the artwork page title for acquirers ",
+              "fullTitle": "visit Verve Access should update the artwork page title for acquirers ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setRejectedTab();\nDC.setinputSearch('Decal It');\nDC.setsearch();\nDC.setVerifyRequest('Decal It');\nln.setLogout();",
+              "err": {},
+              "uuid": "8c834004-ee0b-4798-9d44-5c0d89da234f",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Updates the page title for the artwork page for users belonging to acquirer institutions\ncm.setGoTocmsPage();\ncm.setGoToArtworkSection();\ncm.UpdateAcquirerArtworkPageTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "e72249ba-a719-46dc-8e38-a41abd28d13c",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "should Search for invalid decal on Rejected  tab",
+              "fullTitle": "visit Verve Access should Search for invalid decal on Rejected  tab",
+=======
+              "title": "should update the artwork page title for card persos ",
+              "fullTitle": "visit Verve Access should update the artwork page title for card persos ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "DC.setGoToDecalPage();\nDC.setRejectedTab();\nDC.setinputSearch('blahdadka amdakdja');\nDC.setsearch();\nDC.setVerifyRequest('No Data to Display');\nln.setLogout();",
+              "err": {},
+              "uuid": "636dbf44-f4dd-4480-9372-785df57d724d",
+              "parentUUID": "64c7c39e-9a5e-4db3-bf3e-a006f1f62ff4",
+=======
+              "code": "//Updates the page title for the artwork page for users belonging to card personalization institutions\ncm.setGoTocmsPage();\ncm.setGoToArtworkSection();\ncm.UpdateCardPersoArtworkPageTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "2340f702-ea0e-42f6-95f7-678e63682e5f",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should update the cards page title for corporates ",
+              "fullTitle": "visit Verve Access should update the cards page title for corporates ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Updates the page title for the cards page for users belonging to corporate institutions\ncm.setGoTocmsPage();\ncm.setGoToCardSection();\ncm.UpdateCorporateCardsPageTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "94b4bee3-fdf7-44ed-9aac-703ca7c84c04",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should update the cards page title for issuers ",
+              "fullTitle": "visit Verve Access should update the cards page title for issuers ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Updates the page title for the cards page for users belonging to issuer institutions\ncm.setGoTocmsPage();\ncm.setGoToCardSection();\ncm.UpdateIssuerCardsPageTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "b36bffb1-0839-409b-98c1-38a2c323911f",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should update the cards page title for acquirers ",
+              "fullTitle": "visit Verve Access should update the cards page title for acquirers ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Updates the page title for the cards page for users belonging to acquirer institutions\ncm.setGoTocmsPage();\ncm.setGoToCardSection();\ncm.UpdateAcquirerCardsPageTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "c4fffa5a-724e-4bce-b762-8124892509c2",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should update the cards page title for persos ",
+              "fullTitle": "visit Verve Access should update the cards page title for persos ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Updates the page title for the cards page for users belonging to card personalization institutions\ncm.setGoTocmsPage();\ncm.setGoToCardSection();\ncm.UpdatePersoCardsPageTitle();\ncm.VerifyPageTitleUpdate();\nln.setLogout();",
+              "err": {},
+              "uuid": "779c7c8c-1750-4ce1-8789-07101f71a7f4",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should view the category modal ",
+              "fullTitle": "visit Verve Access should view the category modal ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//View the add category modal and it's elements\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setGetCategoryModal();\nln.setLogout();",
+              "err": {},
+              "uuid": "0b735c8b-0039-41a2-9c2f-969f120c6698",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should attempt to add a category without the title ",
+              "fullTitle": "visit Verve Access should attempt to add a category without the title ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test attempts adding a new category without a title/name\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setGetCategoryModal1();\ncm.setSaveCategory();\ncm.setSaveCategoryError1();\nln.setLogout();",
+              "err": {},
+              "uuid": "5c8565c5-f9a5-4a20-b9eb-9fc8fcf113dd",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should create a new category",
+              "fullTitle": "visit Verve Access should create a new category",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This creates a new category for guide upload\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setGetCategoryModal1();\ncm.setCategoryTitle(varTest.CategoryName);\ncm.setSaveCategory();\ncm.setSaveCategorySuccess();\nln.setLogout();",
+              "err": {},
+              "uuid": "83ac3f7f-1058-4041-8bac-8553e6b9c0ea",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should create a category using a title/name that aleady exists",
+              "fullTitle": "visit Verve Access should create a category using a title/name that aleady exists",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This creates a category using a name/title that already exists in the database\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setGetCategoryModal1();\ncm.setCategoryTitle(\"RandomCategoryName\");\ncm.setSaveCategory();\ncm.setSaveCategoryError();\nln.setLogout();",
+              "err": {},
+              "uuid": "2d5b1325-05f9-4541-9938-7b5717da1ccb",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should view all categories created",
+              "fullTitle": "visit Verve Access should view all categories created",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test views the category list and confirms that created categories are displayed\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setGetCategoryList();\ncy.reload({\n  timeout: 6000\n});\nln.setLogout();",
+              "err": {},
+              "uuid": "2c40664f-13c5-4991-9a20-cbea7c4cab7b",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should view the guides table ",
+              "fullTitle": "visit Verve Access should view the guides table ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test views the guide table and ensures all columns are present\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setViewGuideTableDetails();\nln.setLogout();",
+              "err": {},
+              "uuid": "732b3e48-268c-4f1d-932d-ca57d263179e",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should search for a guide using the category name",
+              "fullTitle": "visit Verve Access should search for a guide using the category name",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test searches for an uploaded guide using the category name\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setSearch('Verve-n3os5');\ncm.setVerifySearch('Verve-n3os5');\ncy.reload({\n  timeout: 6000\n});\nln.setLogout();",
+              "err": {},
+              "uuid": "2070a308-11a5-4be2-b9af-335e723726cc",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should search for a guide using the guide name",
+              "fullTitle": "visit Verve Access should search for a guide using the guide name",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test searches for an uploaded guide using the guide name\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setSearch('Verve-n3os5');\ncm.setVerifySearch('Verve-n3os5');\ncy.reload({\n  timeout: 6000\n});\nln.setLogout();",
+              "err": {},
+              "uuid": "593374ac-c886-458d-abae-81a563043f02",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should search for a guide using a non-existing guide/category name",
+              "fullTitle": "visit Verve Access should search for a guide using a non-existing guide/category name",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test searches for guides using a name that does not exist (name used to search should not exist as a guide or category name)\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setSearch('NoCategoryGuide');\ncm.VerifyNoResultsReturned();\ncy.reload({\n  timeout: 6000\n});\nln.setLogout();",
+              "err": {},
+              "uuid": "1b3d3f96-d7a3-47fc-b34d-7f092641a646",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should view the delete modal",
+              "fullTitle": "visit Verve Access should view the delete modal",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test views the delete modal\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setViewDeleteGuidePopUp();\ncy.reload({\n  timeout: 6000\n});\nln.setLogout();",
+              "err": {},
+              "uuid": "bc821f28-4d2a-4ff5-bfea-dd7701fa81e0",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should close the delete pop-up confirmation",
+              "fullTitle": "visit Verve Access should close the delete pop-up confirmation",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test closes the delete pop-up confirmation after viewing\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setCloseDeleteGuidePopUp(); //cy.reload({timeout : 6000})\nln.setLogout();",
+              "err": {},
+              "uuid": "7491a045-37e8-43da-976a-e144477c5037",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should cancel delete action",
+              "fullTitle": "visit Verve Access should cancel delete action",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test cancels delete action\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setCancelDeleteGuideAction(); //cy.reload({timeout : 6000})\nln.setLogout();",
+              "err": {},
+              "uuid": "f4ca4cf4-32eb-4d25-ad20-d139b3897830",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should delete an uploaded guide",
+              "fullTitle": "visit Verve Access should delete an uploaded guide",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//This test deletes a guide that is obsolete or needs to be updates\ncm.setGoTocmsPage();\ncm.setGoToDashboardSection();\ncm.setDeleteGuide();\ncm.setConfirmGuideDeletion(); //cy.reload({timeout : 6000})\nln.setLogout();",
+              "err": {},
+              "uuid": "b60a7c12-b992-4b89-9b9a-32da3bdbc224",
+              "parentUUID": "802d470b-95f2-4dc2-928c-87320ffaadd0",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+<<<<<<< HEAD
+            "9f4b5ec4-e887-4277-ae31-43e7d01a3db8",
+            "c515502e-d539-4364-836e-af7935f784e3"
+          ],
+          "pending": [],
+          "skipped": [
+            "59289603-5f0a-45d7-809b-d5ecf2dcb2e3",
+            "5a003f77-e596-4c3c-8951-5c0dba54432d",
+            "036fdd71-f6b5-4395-9929-3dca5ed14400",
+            "eef687ce-1233-4806-aa42-07bf9865c155",
+            "224e6fc3-2858-45f8-b0b5-8da872b92ee4",
+            "d113fe32-eb96-42f3-a3dd-85d8119cb010",
+            "1d822dc3-ab80-411f-a42e-b2754b659cde",
+            "8c834004-ee0b-4798-9d44-5c0d89da234f",
+            "636dbf44-f4dd-4480-9372-785df57d724d"
+          ],
+          "duration": 84345,
+=======
+            "fd2d915b-bb26-4108-bd00-26bd75dc31b0"
+          ],
+          "pending": [],
+          "skipped": [
+            "a6756d8f-2652-4831-83f0-47b3ed300e9b",
+            "9ebb58db-3d73-403c-a5f4-94f2e458478d",
+            "0243fabd-4baa-46a4-af4d-3994161e9344",
+            "c0ef21ef-a2bc-4d86-9390-fe9cb078c7cc",
+            "253faef6-3098-4de4-82cd-d1996e3ad24e",
+            "10380a73-ad5c-4282-8463-41edaccec20f",
+            "17551512-8481-45d2-bbd5-8019d22e7354",
+            "e72249ba-a719-46dc-8e38-a41abd28d13c",
+            "2340f702-ea0e-42f6-95f7-678e63682e5f",
+            "94b4bee3-fdf7-44ed-9aac-703ca7c84c04",
+            "b36bffb1-0839-409b-98c1-38a2c323911f",
+            "c4fffa5a-724e-4bce-b762-8124892509c2",
+            "779c7c8c-1750-4ce1-8789-07101f71a7f4",
+            "0b735c8b-0039-41a2-9c2f-969f120c6698",
+            "5c8565c5-f9a5-4a20-b9eb-9fc8fcf113dd",
+            "83ac3f7f-1058-4041-8bac-8553e6b9c0ea",
+            "2d5b1325-05f9-4541-9938-7b5717da1ccb",
+            "2c40664f-13c5-4991-9a20-cbea7c4cab7b",
+            "732b3e48-268c-4f1d-932d-ca57d263179e",
+            "2070a308-11a5-4be2-b9af-335e723726cc",
+            "593374ac-c886-458d-abae-81a563043f02",
+            "1b3d3f96-d7a3-47fc-b34d-7f092641a646",
+            "bc821f28-4d2a-4ff5-bfea-dd7701fa81e0",
+            "7491a045-37e8-43da-976a-e144477c5037",
+            "f4ca4cf4-32eb-4d25-ad20-d139b3897830",
+            "b60a7c12-b992-4b89-9b9a-32da3bdbc224"
+          ],
+          "duration": 48576,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

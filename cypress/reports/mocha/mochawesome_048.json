@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+<<<<<<< HEAD
+    "start": "2023-07-25T13:45:17.454Z",
+    "end": "2023-07-25T13:45:43.035Z",
+    "duration": 25581,
+=======
+    "start": "2023-08-22T15:52:05.388Z",
+    "end": "2023-08-22T15:52:37.004Z",
+    "duration": 31616,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+<<<<<<< HEAD
+      "uuid": "5af8d7f7-b04b-4b36-a320-eafc6b8bf15b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Requests.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Requests.cy.js",
+=======
+      "uuid": "7f3c489b-7948-444f-93d8-a2d55763cbbb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Artwork.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Artwork.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "8b2eafda-bd92-45e3-a9ec-3da78c7f9d5f",
+=======
+          "uuid": "d914f28a-79be-4951-aa1c-82e2a7a90055",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "should test for url, Navigate to Request page and search",
+              "fullTitle": "visit Verve Access should test for url, Navigate to Request page and search",
+              "timedOut": null,
+              "duration": 25362,
+=======
+              "title": "should test for url, Navigate to the Artwork page and search",
+              "fullTitle": "visit Verve Access should test for url, Navigate to the Artwork page and search",
+              "timedOut": null,
+              "duration": 31290,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "cy.title().should('eq', 'Verve Access');\ncy.location('protocol').should('eq', 'https:'); // /cy.contains('Get Started Now').click({timeout : 2000})\ncy.url().should('include', 'admin');\ncy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('verveUser'));\n  ln.setPassword(Cypress.env('verveUserPass'));\n  ln.clickSubmit();\n});\ncy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('VERVE ADMIN').should('be.visible'); //cy.get('.red').click()        \nconst yourFixturePath = 'files/verve.jpg'; // Search by complete Request Title\ncy.get('#burger-cont > :nth-child(3)').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(12) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); // should see Request setting\ncy.contains('Request Setting').should('be.visible'); // Navigate to request setting\ncy.get('.ant-btn').click(); // return to Request page\ncy.get('.title-section > svg').click(); // Navigate to open and closed tab\ncy.get('[aria-selected=\"false\"] > span').click();\ncy.wait(8000);\ncy.reload();\ncy.get('#burger-cont > :nth-child(3)').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(12) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); //Download request\n// ccy.get(\"//li[1]//span[5]//i[1]//*[name()='svg']\").trigger('mouseover')",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Requests.cy.js:379:16)",
+                "diff": "- 'Dashboard | Verve Access'\n+ 'Verve Access'\n"
+              },
+              "uuid": "b63acf6e-401e-43ba-8830-7e6b9531497c",
+              "parentUUID": "8b2eafda-bd92-45e3-a9ec-3da78c7f9d5f",
+=======
+              "code": "cy.title().should('eq', 'Verve Access');\ncy.location('protocol').should('eq', 'https:'); // /cy.contains('Get Started Now').click({timeout : 2000})\ncy.url().should('include', 'admin');\ncy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('verveUser'));\n  ln.setPassword(Cypress.env('verveUserPass'));\n  ln.clickSubmit();\n});\ncy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('VERVE USER').should('be.visible'); //cy.get('.red').click()\n// Search by complete Artwork ID on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"VERVE-NEW-2023-02-23-1116398733\");\nAw.setVerifySearch(\"VERVE-NEW-2023-02-23-1116398733\");\ncy.reload(); // Search by incomplete Artwork ID on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"VERVE-NEW-2023\");\nAw.setVerifySearch(\"VERVE-NEW-2023\");\ncy.reload(); // Search by complete Artwork Title on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"Perso artwork\");\nAw.setVerifySearch(\"Perso artwork\");\ncy.reload(); // Search by incomplete email on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"Pers\");\nAw.setVerifySearch(\"Pers\");\ncy.reload(); // Search by innvalid parameter on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\ncy.reload(); // Search by complete Artwork ID on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"VERVE-PRO-2023-02-28-1135050193\");\nAw.setVerifySearch(\"VERVE-PRO-2023-02-28-1135050193\");\ncy.reload(); // Search by incomplete Artwork ID on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"VERVE-PRO-2023\");\nAw.setVerifySearch(\"VERVE-PRO-2023\");\ncy.reload(); // Search by complete Artwork Title on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"New ArtworkII\");\nAw.setVerifySearch(\"New ArtworkII\");\ncy.reload(); // Search by incomplete email on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"New\");\nAw.setVerifySearch(\"New\");\ncy.reload(); // Search by innvalid parameter on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\ncy.reload(); // Search by complete Artwork ID on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"VERVE-PRO-2023-01-03-0918424864\");\nAw.setVerifySearch(\"VERVE-PRO-2023-01-03-0918424864\");\ncy.reload(); // Search by incomplete Artwork ID on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"VERVE-PRO-2023\");\nAw.setVerifySearch(\"VERVE-PRO-2023\");\ncy.reload(); // Search by complete Artwork Title on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"Amelia Huff\");\nAw.setVerifySearch(\"Amelia Huff\");\ncy.reload(); // Search by incomplete Artwork Title on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"Amelia\");\nAw.setVerifySearch(\"Amelia\");\ncy.reload(); // Search by invalid parameter on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Artwork.cy.js:219:16)",
+                "diff": "- 'Dashboard | Verve Access'\n+ 'Verve Access'\n"
+              },
+              "uuid": "81cc3bef-9ddd-4f15-b77c-ed20c4d4a6bf",
+              "parentUUID": "d914f28a-79be-4951-aa1c-82e2a7a90055",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+<<<<<<< HEAD
+            "b63acf6e-401e-43ba-8830-7e6b9531497c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 25362,
+=======
+            "81cc3bef-9ddd-4f15-b77c-ed20c4d4a6bf"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 31290,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

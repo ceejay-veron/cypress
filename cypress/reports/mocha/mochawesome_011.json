@@ -1,0 +1,724 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-24T15:06:02.330Z",
+    "end": "2023-07-24T15:06:34.393Z",
+    "duration": 32063,
+    "testsRegistered": 23,
+=======
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-08-22T12:39:59.493Z",
+    "end": "2023-08-22T12:41:40.642Z",
+    "duration": 101149,
+    "testsRegistered": 11,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+<<<<<<< HEAD
+    "skipped": 22,
+=======
+    "skipped": 9,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "hasSkipped": true
+  },
+  "results": [
+    {
+<<<<<<< HEAD
+      "uuid": "7683cd30-7594-4fca-ba92-f29ba0bbc60d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Institutions.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Institutions.cy.js",
+=======
+      "uuid": "bc25cdb7-23a4-4ef8-be84-6c7a76478cf0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+          "uuid": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "Search by complete Institution Name",
+              "fullTitle": "visit Verve Access Search by complete Institution Name",
+              "timedOut": null,
+              "duration": 20601,
+=======
+              "title": "should Request Decals",
+              "fullTitle": "visit Verve Access should Request Decals",
+              "timedOut": null,
+              "duration": 80525,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setSearch(\"njoku\");\nis.setVerifySearch(\"Njoku Ministries\");\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Institutions.cy.js:226:8)",
+                "diff": null
+              },
+              "uuid": "2080d557-0f16-4aa9-b189-7fa5006037fc",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setRequestDecals();\nDC.setSelectDecals();\ncy.wait(6000);\nDC.setInputValue(varTest.number);\nDC.setSubmitDecalButton();\nDC.setVerifyRequest('Decal request has been submitted for approval.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#outlined-multiline-flexible`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#outlined-multiline-flexible`, but never found it.\n    at Decal.setInputValue (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js:228:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js:376:8)",
+                "diff": null
+              },
+              "uuid": "4dd4575f-29aa-4006-8bde-0fb747ef4efd",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            },
+            {
+<<<<<<< HEAD
+              "title": "Search by incomplete Institution Name",
+              "fullTitle": "visit Verve Access Search by incomplete Institution Name",
+=======
+              "title": "should not Request Decals without ",
+              "fullTitle": "visit Verve Access should not Request Decals without ",
+              "timedOut": null,
+              "duration": 20408,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "DC.setGoToDecalPage();\nDC.setRequestDecals();\nDC.setSelectDecals(); // DC.setInputValue(varTest.number)\nDC.setSubmitDecalButton(); //DC.setVerifyRequest('Decal request has been submitted for approval.')\nDC.setCloseModal();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[type=\"email\"]`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[type=\"email\"]`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Login.setUserName (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js:284:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\DecalRequests.cy.js:365:10)",
+                "diff": null
+              },
+              "uuid": "a4421936-4be7-4d0c-9e4a-56af8eefb681",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should Search for complete decal on Approved tab ",
+              "fullTitle": "visit Verve Access should Search for complete decal on Approved tab ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setSearch(\"njoku\");\nis.setVerifySearch(\"Njoku\");\nln.setLogout();",
+              "err": {},
+              "uuid": "b6783b3a-04b4-450e-9eea-37914db862cc",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setinputSearch('Decal Item 41891');\nDC.setsearch();\nDC.setVerifyRequest('Decal Item 41891');\nln.setLogout();",
+              "err": {},
+              "uuid": "07871b96-08e0-4427-8594-38030bfff4ab",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "Search by complete email",
+              "fullTitle": "visit Verve Access Search by complete email",
+=======
+              "title": "should Search for incomplete decal on Approved tab",
+              "fullTitle": "visit Verve Access should Search for incomplete decal on Approved tab",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setSearch(\"amazing@qa.team\");\nis.setVerifySearch(\"amazing@qa.team\");\nln.setLogout();",
+              "err": {},
+              "uuid": "d02726d7-ab94-4bbf-9a3b-432ad6755b10",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setinputSearch('Decal It');\nDC.setsearch();\nDC.setVerifyRequest('Decal It');\nln.setLogout();",
+              "err": {},
+              "uuid": "1607fbf4-60c0-4d23-b8db-267dcad54c00",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": " Search by by complete email",
+              "fullTitle": "visit Verve Access  Search by by complete email",
+=======
+              "title": "should Search for invalid decal on Approved tab",
+              "fullTitle": "visit Verve Access should Search for invalid decal on Approved tab",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setSearch(\"amazing\");\nis.setVerifySearch(\"amazing\");\nln.setLogout();",
+              "err": {},
+              "uuid": "b747b9d8-2533-4132-a250-41b4c447c3e4",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setinputSearch('blahdadka amdakdja');\nDC.setsearch();\nDC.setVerifyRequest('No Data to Display');\nln.setLogout();",
+              "err": {},
+              "uuid": "8b1d7105-2933-4950-b36e-50ed529042e3",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": " Search by complete Phone number",
+              "fullTitle": "visit Verve Access  Search by complete Phone number",
+=======
+              "title": "should Search for complete decal on Pending tab ",
+              "fullTitle": "visit Verve Access should Search for complete decal on Pending tab ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setSearch(\"09099002003\");\nis.setVerifySearch(\"09099002003\");\nln.setLogout();",
+              "err": {},
+              "uuid": "ef91533f-2b06-4fdb-862e-72db547225a4",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setPendingTab();\nDC.setinputSearch('Decal Item 87545');\nDC.setsearch();\nDC.setVerifyRequest('Decal Item 87545');\nln.setLogout();",
+              "err": {},
+              "uuid": "1a9bb9a9-8a80-479b-91c7-709d99cd21f3",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": " Search by incomplete phone number",
+              "fullTitle": "visit Verve Access  Search by incomplete phone number",
+=======
+              "title": "should Search for incomplete decal on Pending  tab",
+              "fullTitle": "visit Verve Access should Search for incomplete decal on Pending  tab",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setSearch(\"090990\");\nis.setVerifySearch(\"090990\");\nln.setLogout();",
+              "err": {},
+              "uuid": "3e82abc3-6115-4b77-8909-bb92df76a57c",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setPendingTab();\nDC.setinputSearch('Decal It');\nDC.setsearch();\nDC.setVerifyRequest('Decal It');\nln.setLogout();",
+              "err": {},
+              "uuid": "db145309-be23-443f-b11a-9caa1728c619",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "Search by invalid phone number",
+              "fullTitle": "visit Verve Access Search by invalid phone number",
+=======
+              "title": "should Search for invalid decal on Pending  tab",
+              "fullTitle": "visit Verve Access should Search for invalid decal on Pending  tab",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setSearch(\"473890\");\nis.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {},
+              "uuid": "56957f62-e3f5-4fb0-b54d-10751957c42b",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setPendingTab();\nDC.setinputSearch('blahdadka amdakdja');\nDC.setsearch();\nDC.setVerifyRequest('No Data to Display');\nln.setLogout();",
+              "err": {},
+              "uuid": "5215c4a9-9904-49c8-8db5-6106aa00f58c",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "Search by innvalid parameter",
+              "fullTitle": "visit Verve Access Search by innvalid parameter",
+=======
+              "title": "should Search for complete decal on Rejected tab ",
+              "fullTitle": "visit Verve Access should Search for complete decal on Rejected tab ",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setSearch(\"caosasuddsds sdhsid\");\nis.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {},
+              "uuid": "9d0c47ee-837a-4bbe-b544-86222a4f8994",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setRejectedTab();\nDC.setinputSearch('Decal Item 53890');\nDC.setsearch();\nDC.setVerifyRequest('Decal Item 53890');\nln.setLogout();",
+              "err": {},
+              "uuid": "ab3819d4-b615-4fb0-852e-8dfd098322ba",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": " Search by complete Institution Name",
+              "fullTitle": "visit Verve Access  Search by complete Institution Name",
+=======
+              "title": "should Search for incomplete decal on Rejected  tab",
+              "fullTitle": "visit Verve Access should Search for incomplete decal on Rejected  tab",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setInactiveTab();\nis.setSearch(\"Scheme Management-939388-Incorporated\");\nis.setVerifySearch(\"Scheme Management-939388-Incorporated\");\nln.setLogout();",
+              "err": {},
+              "uuid": "5e51a9c2-d7a3-4eb6-9c16-deeae1ad437d",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setRejectedTab();\nDC.setinputSearch('Decal It');\nDC.setsearch();\nDC.setVerifyRequest('Decal It');\nln.setLogout();",
+              "err": {},
+              "uuid": "25440e40-9f17-46b3-ad61-30da1f88cef9",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            },
+            {
+<<<<<<< HEAD
+              "title": "Search by incomplete Institution Name",
+              "fullTitle": "visit Verve Access Search by incomplete Institution Name",
+=======
+              "title": "should Search for invalid decal on Rejected  tab",
+              "fullTitle": "visit Verve Access should Search for invalid decal on Rejected  tab",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "is.setGoToInstitionPage();\nis.setInactiveTab();\nis.setSearch(\"scheme\");\nis.setVerifySearch(\"scheme\");\nln.setLogout();",
+              "err": {},
+              "uuid": "bfaf7f17-f219-4b30-b158-b49bfea6c31d",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by complete email",
+              "fullTitle": "visit Verve Access Search by complete email",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setInactiveTab();\nis.setSearch(\"fri1905@qa.team\");\nis.setVerifySearch(\"fri1905@qa.team\");\nln.setLogout();",
+              "err": {},
+              "uuid": "fa273845-86af-482d-8a9d-aaae86124dfa",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by complete email",
+              "fullTitle": "visit Verve Access Search by complete email",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setInactiveTab();\nis.setSearch(\"scheme\");\nis.setVerifySearch(\"scheme\");\nln.setLogout();",
+              "err": {},
+              "uuid": "830a7416-2b0d-4fac-90ba-29f4174b9f51",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": " Search by complete Phone number",
+              "fullTitle": "visit Verve Access  Search by complete Phone number",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setInactiveTab();\nis.setSearch(\"09099816066\");\nis.setVerifySearch(\"09099816066\");\nln.setLogout();",
+              "err": {},
+              "uuid": "60aa67f9-ebe6-4ffc-a393-7bf42dc17b18",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by incomplete phone number",
+              "fullTitle": "visit Verve Access Search by incomplete phone number",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setInactiveTab();\nis.setSearch(\"09099\");\nis.setVerifySearch(\"09099\");\nln.setLogout();",
+              "err": {},
+              "uuid": "d7094ed3-2669-41ba-aa39-a58028fdc048",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by invalid phone number",
+              "fullTitle": "visit Verve Access Search by invalid phone number",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Serach by invalid phone number\nis.setGoToInstitionPage();\nis.setInactiveTab();\nis.setSearch(\"473890\");\nis.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {},
+              "uuid": "c254a03c-ac2c-41d5-81a8-98eb4bbf17b6",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "search by innvalid parameter",
+              "fullTitle": "visit Verve Access search by innvalid parameter",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Serach by innvalid parameter\nis.setGoToInstitionPage();\nis.setInactiveTab();\nis.setSearch(\"caosasuddsds sdhsid\");\nis.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {},
+              "uuid": "507652a2-f50b-4c97-8b27-163923eb6a20",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "create organization with valid details",
+              "fullTitle": "visit Verve Access create organization with valid details",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setAddbutton();\nis.setInstitionName(\"goodbank \" + varTest.test);\nis.setInstitionType();\nis.setphone_number(\"08033271\" + varTest.number);\nis.setemail(\"goodbank\" + varTest.number + \"@qa.team\");\nis.setSubmitButton();\ncy.wait(8500);\nis.setsuccessMessage();\nln.setLogout();",
+              "err": {},
+              "uuid": "1c6cfc38-b7b6-4d45-a673-7cb90109beb0",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "create organization without name ",
+              "fullTitle": "visit Verve Access create organization without name ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setAddbutton();\nis.setInstitionName(\" \");\nis.setInstitionType();\nis.setphone_number(\"08033271\" + varTest.number);\nis.setemail(\"goodbank\" + varTest.number + \"@qa.team\");\nis.setSubmitButton();\nis.setErrorMessage1();\nis.setClosetab();\nln.setLogout();",
+              "err": {},
+              "uuid": "7af6662e-a341-4799-aa25-7c280c62447d",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "create organization without phone number",
+              "fullTitle": "visit Verve Access create organization without phone number",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setAddbutton();\nis.setInstitionName(\"goodbank \" + varTest.test);\nis.setInstitionType();\nis.setphone_number(\" \");\nis.setemail(\"goodbank\" + varTest.number + \"@qa.team\"); //is.setSubmitButton()\nis.setErrorMessage6();\nis.setClosetab();\nln.setLogout();",
+              "err": {},
+              "uuid": "746d8873-983d-4802-a1a3-347215b7d90f",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "create organization without Email",
+              "fullTitle": "visit Verve Access create organization without Email",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setAddbutton();\nis.setInstitionName(\"goodbank \" + varTest.test);\nis.setInstitionType();\nis.setphone_number(\"08033271\" + varTest.number);\nis.setemail(\" \");\nis.setSubmitButton();\nis.setErrorMessage3();\nis.setClosetab();\nln.setLogout();",
+              "err": {},
+              "uuid": "6520d622-ed1a-4b12-8ded-85ca815e25dc",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "create organization without institution Type",
+              "fullTitle": "visit Verve Access create organization without institution Type",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setAddbutton();\nis.setInstitionName(\"goodbank \" + varTest.test);\nis.setphone_number(\"08033271\" + varTest.number);\nis.setemail(\"goodbank\" + varTest.number + \"@qa.team\");\nis.setSubmitButton();\nis.setErrorMessage4();\nis.setClosetab();\nln.setLogout();",
+              "err": {},
+              "uuid": "dc17be8e-03b5-418f-b7c1-59445fe199e8",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "create organization without any details",
+              "fullTitle": "visit Verve Access create organization without any details",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setAddbutton();\nis.setInstitionName(\" \");\nis.setphone_number(\" \");\nis.setemail(\" \"); //is.setSubmitButton()\nis.setErrorMessage1();\nis.setErrorMessage6();\nis.setErrorMessage3(); // is.setErrorMessage4()\nis.setClosetab();\nln.setLogout();",
+              "err": {},
+              "uuid": "0bffae3c-2e41-4050-a9b6-bf628d1dee26",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should view institution detail",
+              "fullTitle": "visit Verve Access should view institution detail",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "is.setGoToInstitionPage();\nis.setViewInstitutionDetails();\nis.setVerifySearch(\"Institution Name\");\nis.setVerifySearch(\"Email\");\nis.setVerifySearch(\"Phone Number\");\nis.setVerifySearch(\"Institution Type\");\nis.setVerifySearch(\"id\");\nis.setIsArtwork();\nis.setIsCards();\nis.setIsWhitelistsCard();\nis.setIsUser();\nis.setIsDecal();\nis.setIsContactSetails();\nln.setLogout();",
+              "err": {},
+              "uuid": "008dcb3c-37f9-427e-8b68-33f2ef141564",
+              "parentUUID": "9de1c1c3-7392-41a4-b5d5-2852a00ceb40",
+=======
+              "code": "DC.setGoToDecalPage();\nDC.setRejectedTab();\nDC.setinputSearch('blahdadka amdakdja');\nDC.setsearch();\nDC.setVerifyRequest('No Data to Display');\nln.setLogout();",
+              "err": {},
+              "uuid": "b5280bd3-2ba3-42ab-9d69-36ef94c24972",
+              "parentUUID": "699e0527-187e-4a59-9f92-cdeafb6385fb",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+<<<<<<< HEAD
+            "2080d557-0f16-4aa9-b189-7fa5006037fc"
+          ],
+          "pending": [],
+          "skipped": [
+            "b6783b3a-04b4-450e-9eea-37914db862cc",
+            "d02726d7-ab94-4bbf-9a3b-432ad6755b10",
+            "b747b9d8-2533-4132-a250-41b4c447c3e4",
+            "ef91533f-2b06-4fdb-862e-72db547225a4",
+            "3e82abc3-6115-4b77-8909-bb92df76a57c",
+            "56957f62-e3f5-4fb0-b54d-10751957c42b",
+            "9d0c47ee-837a-4bbe-b544-86222a4f8994",
+            "5e51a9c2-d7a3-4eb6-9c16-deeae1ad437d",
+            "bfaf7f17-f219-4b30-b158-b49bfea6c31d",
+            "fa273845-86af-482d-8a9d-aaae86124dfa",
+            "830a7416-2b0d-4fac-90ba-29f4174b9f51",
+            "60aa67f9-ebe6-4ffc-a393-7bf42dc17b18",
+            "d7094ed3-2669-41ba-aa39-a58028fdc048",
+            "c254a03c-ac2c-41d5-81a8-98eb4bbf17b6",
+            "507652a2-f50b-4c97-8b27-163923eb6a20",
+            "1c6cfc38-b7b6-4d45-a673-7cb90109beb0",
+            "7af6662e-a341-4799-aa25-7c280c62447d",
+            "746d8873-983d-4802-a1a3-347215b7d90f",
+            "6520d622-ed1a-4b12-8ded-85ca815e25dc",
+            "dc17be8e-03b5-418f-b7c1-59445fe199e8",
+            "0bffae3c-2e41-4050-a9b6-bf628d1dee26",
+            "008dcb3c-37f9-427e-8b68-33f2ef141564"
+          ],
+          "duration": 20601,
+=======
+            "4dd4575f-29aa-4006-8bde-0fb747ef4efd",
+            "a4421936-4be7-4d0c-9e4a-56af8eefb681"
+          ],
+          "pending": [],
+          "skipped": [
+            "07871b96-08e0-4427-8594-38030bfff4ab",
+            "1607fbf4-60c0-4d23-b8db-267dcad54c00",
+            "8b1d7105-2933-4950-b36e-50ed529042e3",
+            "1a9bb9a9-8a80-479b-91c7-709d99cd21f3",
+            "db145309-be23-443f-b11a-9caa1728c619",
+            "5215c4a9-9904-49c8-8db5-6106aa00f58c",
+            "ab3819d4-b615-4fb0-852e-8dfd098322ba",
+            "25440e40-9f17-46b3-ad61-30da1f88cef9",
+            "b5280bd3-2ba3-42ab-9d69-36ef94c24972"
+          ],
+          "duration": 100933,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

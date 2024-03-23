@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-24T15:16:31.151Z",
+    "end": "2023-07-24T15:16:59.904Z",
+    "duration": 28753,
+    "testsRegistered": 1,
+    "passPercent": 0,
+=======
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-22T13:17:59.694Z",
+    "end": "2023-08-22T13:20:19.833Z",
+    "duration": 140139,
+    "testsRegistered": 3,
+    "passPercent": 100,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+<<<<<<< HEAD
+      "uuid": "fda6292a-599b-4610-bbfb-1c34cb3810c3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Users.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Users.cy.js",
+=======
+      "uuid": "1016c3ee-8556-4b8d-9822-5bee89e87bae",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\VMMR_new.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\VMMR_new.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "8918c797-0bd5-4feb-96f7-36166a55b642",
+=======
+          "uuid": "f8fb7b7a-8170-410b-9733-657e858ed78e",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "should Navigate to user and search",
+              "fullTitle": "visit Verve Access should Navigate to user and search",
+              "timedOut": null,
+              "duration": 28520,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('vervAdminUser'));\n  ln.setPassword(Cypress.env('verveAdminPass'));\n  ln.clickSubmit();\n}); // Search by Complete first name  on active tab     \nUs.setGoToUserPage();\nUs.setSearch(\"Onyedikachi\");\nUs.setVerifySearch(\"Onyedikachi\");\ncy.reload(); // Search by inComplete first name  on active tab     \nUs.setGoToUserPage();\nUs.setSearch(\"Onye\");\nUs.setVerifySearch(\"Onye\");\ncy.reload(); // Search by Complete last Name on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"Anumudu\");\nUs.setVerifySearch(\"Anumudu\");\ncy.reload(); // Search by inComplete last Name on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"Anu\");\nUs.setVerifySearch(\"Anu\");\ncy.reload(); // Search by Complete Email name on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"mayowa.onaolapo@interswitchgroup.com\");\nUs.setVerifySearch(\"mayowa.onaolapo@interswitchgroup.com\");\ncy.reload(); // Search by inComplete email on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"mayowa.onaolapo\");\nUs.setVerifySearch(\"mayowa.onaolapo\");\ncy.reload(); // Serach by innvalid parameter on on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"xxxxx903567\");\nUs.setVerifySearch(\"No Data to Display\");\ncy.reload(); // Search by Complete first name  on inactive tab     \nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"Ijeoma\");\nUs.setVerifySearch(\"Ijeoma\");\ncy.reload(); // Search by inComplete first name  on inactive tab     \nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"Ije\");\nUs.setVerifySearch(\"Ije\");\ncy.reload(); // Search by Complete last Name on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"Olebuezi\");\nUs.setVerifySearch(\"Olebuezi\");\ncy.reload(); // Search by inComplete last Name on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"Ole\");\nUs.setVerifySearch(\"Ole\");\ncy.reload(); // Search by Complete Email name on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"lynda.okoro@interswitchgroup.com\");\nUs.setVerifySearch(\"lynda.okoro@interswitchgroup.com\");\ncy.reload(); // Search by inComplete email on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"lynda.okoro\");\nUs.setVerifySearch(\"lynda.okoro\");\ncy.reload(); // Serach by innvalid parameter on on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"trjshdjdh udnskvfki\");\nUs.setVerifySearch(\"No Data to Display\");\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Users.cy.js:382:8)",
+                "diff": null
+              },
+              "uuid": "d053f1ce-2e2b-4e95-a723-9a949516b835",
+              "parentUUID": "8918c797-0bd5-4feb-96f7-36166a55b642",
+=======
+              "title": "should Verify User Role",
+              "fullTitle": "visit Verve Access should Verify User Role",
+              "timedOut": null,
+              "duration": 67810,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('CORPORATE_USER').should('be.visible');\ncy.get('.red').click();\ncy.wait(6000); //ln.setLogout()",
+              "err": {},
+              "uuid": "ada0b3d8-778d-40af-a913-bf2e1f3222f6",
+              "parentUUID": "f8fb7b7a-8170-410b-9733-657e858ed78e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should view the VMMR page and its elements ",
+              "fullTitle": "visit Verve Access should view the VMMR page and its elements ",
+              "timedOut": null,
+              "duration": 38843,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Views the VMMR page and the elements\nCV.GetCorpUserVMMRPage();\nCV.GetCorpUserVMMRTable(); //CV.GetCreateVMMRModal();\nln.setLogout();",
+              "err": {},
+              "uuid": "42ac7b79-dd8c-4d9d-80fe-3fe35bda1ccf",
+              "parentUUID": "f8fb7b7a-8170-410b-9733-657e858ed78e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should view the guides page ",
+              "fullTitle": "visit Verve Access should view the guides page ",
+              "timedOut": null,
+              "duration": 32734,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//View the Guides Page\nln.setLogout();",
+              "err": {},
+              "uuid": "30884108-a6e0-4e6f-b06c-a4daf1844a66",
+              "parentUUID": "f8fb7b7a-8170-410b-9733-657e858ed78e",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+<<<<<<< HEAD
+          "passes": [],
+          "failures": [
+            "d053f1ce-2e2b-4e95-a723-9a949516b835"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 28520,
+=======
+          "passes": [
+            "ada0b3d8-778d-40af-a913-bf2e1f3222f6",
+            "42ac7b79-dd8c-4d9d-80fe-3fe35bda1ccf",
+            "30884108-a6e0-4e6f-b06c-a4daf1844a66"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 139387,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

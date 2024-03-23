@@ -1,0 +1,344 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2023-07-25T13:15:01.775Z",
+    "end": "2023-07-25T13:21:36.267Z",
+    "duration": 394492,
+    "testsRegistered": 9,
+=======
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T14:30:54.257Z",
+    "end": "2023-08-22T14:30:54.949Z",
+    "duration": 692,
+    "testsRegistered": 1,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+<<<<<<< HEAD
+      "uuid": "b664c2f0-3430-42ed-8e16-0a5d9e7fa292",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js",
+=======
+      "uuid": "ccf334b7-e363-44b0-9de7-9651a9f7eade",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Artwork.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Artwork.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+=======
+          "uuid": "da8d5e40-07db-4bdb-9159-7359045d14c5",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "it should search for valid report",
+              "fullTitle": "visit Verve Access it should search for valid report",
+              "timedOut": null,
+              "duration": 48640,
+=======
+              "title": "search by valid title Id on the approved tab",
+              "fullTitle": "visit Verve Access search by valid title Id on the approved tab",
+              "timedOut": null,
+              "duration": 332,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "Rp.setGoToReportPage2();\nRp.setinputValue('Issuer-Reports');\nRp.setSummitButton(); //Rp.setVerify('Issuer-Reports')\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:387:8)",
+                "diff": null
+              },
+              "uuid": "e834f7d6-9d27-403f-800e-34c154fdcf8d",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for invalid report",
+              "fullTitle": "visit Verve Access it should search for invalid report",
+              "timedOut": null,
+              "duration": 41166,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setinputValue('Issuedfdfdr-Reportddds');\nRp.setSummitButton(); // Rp.setVerify('No Data to Display')\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:394:8)",
+                "diff": null
+              },
+              "uuid": "55cfa5fe-3376-4bc7-a081-8ddb290c8f9d",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for empty Value",
+              "fullTitle": "visit Verve Access it should search for empty Value",
+              "timedOut": null,
+              "duration": 40771,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setinputValue(' ');\nRp.setSummitButton(); //Rp.setVerify('No Data to Display')\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:401:8)",
+                "diff": null
+              },
+              "uuid": "ff80d89b-7835-45f0-a02b-c1a2345f2e98",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of last 30 days",
+              "fullTitle": "visit Verve Access it should search for Report of last 30 days",
+              "timedOut": null,
+              "duration": 43121,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateTolast30days();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:408:8)",
+                "diff": null
+              },
+              "uuid": "faf6368b-9df4-44e6-b99c-c8c3032503f8",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of This Month",
+              "fullTitle": "visit Verve Access it should search for Report of This Month",
+              "timedOut": null,
+              "duration": 43131,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToThisMonth();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:414:8)",
+                "diff": null
+              },
+              "uuid": "16cbb133-a88d-49f4-97c7-3d335f2cd0d7",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of last Month",
+              "fullTitle": "visit Verve Access it should search for Report of last Month",
+              "timedOut": null,
+              "duration": 44283,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToLastMonth();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:420:8)",
+                "diff": null
+              },
+              "uuid": "018cbbb2-73ab-4b30-8afb-c32ad391e371",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of Today",
+              "fullTitle": "visit Verve Access it should search for Report of Today",
+              "timedOut": null,
+              "duration": 41696,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToToday();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:426:8)",
+                "diff": null
+              },
+              "uuid": "3628134a-3b46-4ce5-b51d-a36a481ccfdf",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of Yesterday",
+              "fullTitle": "visit Verve Access it should search for Report of Yesterday",
+              "timedOut": null,
+              "duration": 44094,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToYesterday();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:432:8)",
+                "diff": null
+              },
+              "uuid": "962f475f-6224-4d13-9869-6745f9732386",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for Report of last seven days",
+              "fullTitle": "visit Verve Access it should search for Report of last seven days",
+              "timedOut": null,
+              "duration": 44732,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToLast7Days();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at Report.setGoToReportPage2 (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:526:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Reports.cy.js:438:8)",
+                "diff": null
+              },
+              "uuid": "66518e01-a04b-4c1b-8d8f-0e5c9cfada09",
+              "parentUUID": "eb7b4182-aaad-4c55-8c03-6d4e0a7a0db4",
+=======
+              "code": "ArtworkPage.selSvg().click({\n  force: true\n});\ncy.wait(6000);\nArtworkPage.selArtwork().click();\nArtworkPage.selArtworkId().type(\"Contract Extension Letter - Lukman Olabanjo.pdf\");\nArtworkPage.clickSearchBtn().click();",
+              "err": {
+                "message": "TypeError: cy.login is not a function\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "TypeError: cy.login is not a function\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Artwork.cy.js:265:8)",
+                "diff": null
+              },
+              "uuid": "556d0e7d-3b0f-4919-ad4d-b1048898858c",
+              "parentUUID": "da8d5e40-07db-4bdb-9159-7359045d14c5",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+<<<<<<< HEAD
+            "e834f7d6-9d27-403f-800e-34c154fdcf8d",
+            "55cfa5fe-3376-4bc7-a081-8ddb290c8f9d",
+            "ff80d89b-7835-45f0-a02b-c1a2345f2e98",
+            "faf6368b-9df4-44e6-b99c-c8c3032503f8",
+            "16cbb133-a88d-49f4-97c7-3d335f2cd0d7",
+            "018cbbb2-73ab-4b30-8afb-c32ad391e371",
+            "3628134a-3b46-4ce5-b51d-a36a481ccfdf",
+            "962f475f-6224-4d13-9869-6745f9732386",
+            "66518e01-a04b-4c1b-8d8f-0e5c9cfada09"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 391634,
+=======
+            "556d0e7d-3b0f-4919-ad4d-b1048898858c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 332,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

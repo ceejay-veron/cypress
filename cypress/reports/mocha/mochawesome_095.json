@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T09:38:18.109Z",
+    "end": "2023-08-22T09:38:45.693Z",
+    "duration": 27584,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "76aad1ab-e494-4c74-94b3-d4239735a0f7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Artwork.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Artwork.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8a126ab6-96bd-4c22-afa5-51ce50c4c1d9",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should test for url, Navigate to the Artwork page and search",
+              "fullTitle": "visit Verve Access should test for url, Navigate to the Artwork page and search",
+              "timedOut": null,
+              "duration": 27169,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'Verve Access');\ncy.location('protocol').should('eq', 'https:'); // /cy.contains('Get Started Now').click({timeout : 2000})\ncy.url().should('include', 'admin');\ncy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('verveUser'));\n  ln.setPassword(Cypress.env('verveUserPass'));\n  ln.clickSubmit();\n});\ncy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('VERVE USER').should('be.visible'); //cy.get('.red').click()\n// Search by complete Artwork ID on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"VERVE-NEW-2023-02-23-1116398733\");\nAw.setVerifySearch(\"VERVE-NEW-2023-02-23-1116398733\");\ncy.reload(); // Search by incomplete Artwork ID on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"VERVE-NEW-2023\");\nAw.setVerifySearch(\"VERVE-NEW-2023\");\ncy.reload(); // Search by complete Artwork Title on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"Perso artwork\");\nAw.setVerifySearch(\"Perso artwork\");\ncy.reload(); // Search by incomplete email on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"Pers\");\nAw.setVerifySearch(\"Pers\");\ncy.reload(); // Search by innvalid parameter on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\ncy.reload(); // Search by complete Artwork ID on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"VERVE-PRO-2023-02-28-1135050193\");\nAw.setVerifySearch(\"VERVE-PRO-2023-02-28-1135050193\");\ncy.reload(); // Search by incomplete Artwork ID on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"VERVE-PRO-2023\");\nAw.setVerifySearch(\"VERVE-PRO-2023\");\ncy.reload(); // Search by complete Artwork Title on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"New ArtworkII\");\nAw.setVerifySearch(\"New ArtworkII\");\ncy.reload(); // Search by incomplete email on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"New\");\nAw.setVerifySearch(\"New\");\ncy.reload(); // Search by innvalid parameter on pending tab\nAw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\ncy.reload(); // Search by complete Artwork ID on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"VERVE-PRO-2023-01-03-0918424864\");\nAw.setVerifySearch(\"VERVE-PRO-2023-01-03-0918424864\");\ncy.reload(); // Search by incomplete Artwork ID on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"VERVE-PRO-2023\");\nAw.setVerifySearch(\"VERVE-PRO-2023\");\ncy.reload(); // Search by complete Artwork Title on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"Amelia Huff\");\nAw.setVerifySearch(\"Amelia Huff\");\ncy.reload(); // Search by incomplete Artwork Title on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"Amelia\");\nAw.setVerifySearch(\"Amelia\");\ncy.reload(); // Search by invalid parameter on Reject tab\nAw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Artwork.cy.js:219:16)",
+                "diff": "- 'Dashboard | Verve Access'\n+ 'Verve Access'\n"
+              },
+              "uuid": "975d4906-49de-4d21-988e-0da90742feef",
+              "parentUUID": "8a126ab6-96bd-4c22-afa5-51ce50c4c1d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "975d4906-49de-4d21-988e-0da90742feef"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 27169,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

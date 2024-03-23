@@ -1,0 +1,442 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-24T15:17:27.248Z",
+    "end": "2023-07-24T15:18:03.793Z",
+    "duration": 36545,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9edb4cb3-522c-4126-9aef-296b681d0029",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\WhitelistCards.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\WhitelistCards.cy.js",
+=======
+    "tests": 10,
+    "passes": 8,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-08-22T13:22:46.034Z",
+    "end": "2023-08-22T13:32:31.127Z",
+    "duration": 585093,
+    "testsRegistered": 15,
+    "passPercent": 53.333333333333336,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 5,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "0abc99a6-ced0-441b-903a-8dc06d38d5e7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Artwork.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Artwork.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "f816c65b-c859-484f-a5d5-b8ed38678ad6",
+=======
+          "uuid": "e16eda10-934f-4820-84e9-06d1ded68234",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "should Navigate to whitelist cards and search",
+              "fullTitle": "visit Verve Access should Navigate to whitelist cards and search",
+              "timedOut": null,
+              "duration": 36151,
+=======
+              "title": "Search by complete Artwork ID on Approved tab",
+              "fullTitle": "visit Verve Access Search by complete Artwork ID on Approved tab",
+              "timedOut": null,
+              "duration": 74001,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Search by complete Artwork ID on Approved tab\nAw.setGoToArtworkPage();\nAw.setSearch(\"VERVE-NEW-2023-02-23-1116398733\");\nAw.setVerifySearch(\"VERVE-NEW-2023-02-23-1116398733\");\nln.setLogout();",
+              "err": {},
+              "uuid": "2e99c1f7-6c50-47dd-8891-704191681a95",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by incomplete Artwork ID on Approved tab",
+              "fullTitle": "visit Verve Access Search by incomplete Artwork ID on Approved tab",
+              "timedOut": null,
+              "duration": 48845,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setSearch(\"VERVE-NEW-2023\");\nAw.setVerifySearch(\"VERVE-NEW-2023\");\nln.setLogout();",
+              "err": {},
+              "uuid": "f8f57bbf-857e-4a01-b23a-63082244f07e",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by complete Artwork Title on Approved tab",
+              "fullTitle": "visit Verve Access Search by complete Artwork Title on Approved tab",
+              "timedOut": null,
+              "duration": 70876,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setSearch(\"Perso artwork\");\nAw.setVerifySearch(\"Perso artwork\");\nln.setLogout();",
+              "err": {},
+              "uuid": "1dccfd68-85e5-434e-9154-68314ff17320",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by incomplete email on Approved tab",
+              "fullTitle": "visit Verve Access Search by incomplete email on Approved tab",
+              "timedOut": null,
+              "duration": 61814,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setSearch(\"Pers\");\nAw.setVerifySearch(\"Pers\");\nln.setLogout();",
+              "err": {},
+              "uuid": "c898c56f-2f29-46e6-857d-ecb49a94e377",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by innvalid parameter on Approved tab",
+              "fullTitle": "visit Verve Access Search by innvalid parameter on Approved tab",
+              "timedOut": null,
+              "duration": 64828,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {},
+              "uuid": "0a85c319-a5e6-490f-bbb1-b5317cc594c6",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by complete Artwork ID on pending tab",
+              "fullTitle": "visit Verve Access Search by complete Artwork ID on pending tab",
+              "timedOut": null,
+              "duration": 51800,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"VERVE-GRA-2023-05-20-1026505673\");\nAw.setVerifySearch(\"VERVE-GRA-2023-05-20-1026505673\");\nln.setLogout();",
+              "err": {},
+              "uuid": "bd507705-38fa-4c01-9121-9a452f942b19",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by incomplete Artwork ID on pending tab",
+              "fullTitle": "visit Verve Access Search by incomplete Artwork ID on pending tab",
+              "timedOut": null,
+              "duration": 63483,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"VERVE-GRA-2023\");\nAw.setVerifySearch(\"VERVE-GRA-2023\");\nln.setLogout();",
+              "err": {},
+              "uuid": "59f27810-aade-4473-a079-7002e7b4abc5",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by complete Artwork Title on pending tab",
+              "fullTitle": "visit Verve Access Search by complete Artwork Title on pending tab",
+              "timedOut": null,
+              "duration": 65190,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"Artwork41884\");\nAw.setVerifySearch(\"Artwork41884\");\nln.setLogout();",
+              "err": {},
+              "uuid": "1a154bc7-90cf-4726-a46c-fb177a8063b5",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by incomplete email on pending tab",
+              "fullTitle": "visit Verve Access Search by incomplete email on pending tab",
+              "timedOut": null,
+              "duration": 59585,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "cy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('vervAdminUser'));\n  ln.setPassword(Cypress.env('verveAdminPass'));\n  ln.clickSubmit();\n}); // Search by first three pan number      \nWc.setGoTowhitelistPage();\nWc.setSearch(\"506\");\nWc.setVerifySearch(\"506\");\ncy.reload(); // Search by last four pan number\nWc.setGoTowhitelistPage();\nWc.setSearch(\"1858\");\nWc.setVerifySearch(\"1858\");\ncy.reload(); // Serach by innvalid parameter \nWc.setGoTowhitelistPage();\nWc.setSearch(\"xxxxx903567\");\nWc.setVerifySearch(\"No Data to Display\");\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\WhitelistCards.cy.js:373:8)",
+                "diff": null
+              },
+              "uuid": "cffe2f73-b8a1-4d95-8b22-35e37072979c",
+              "parentUUID": "f816c65b-c859-484f-a5d5-b8ed38678ad6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cffe2f73-b8a1-4d95-8b22-35e37072979c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 36151,
+=======
+              "code": "Aw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"Art\");\nAw.setVerifySearch(\"Artwork41884\");\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Artwork41884' but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: 'Artwork41884' but never did.\n    at Artwork.setVerifySearch (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Artwork.cy.js:422:29)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Artwork.cy.js:289:8)",
+                "diff": null
+              },
+              "uuid": "b8a504e8-fda4-4171-8417-a446bc58d9b4",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by innvalid parameter on pending tab",
+              "fullTitle": "visit Verve Access Search by innvalid parameter on pending tab",
+              "timedOut": null,
+              "duration": 21527,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setPendingtab();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[type=\"email\"]`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `input[type=\"email\"]`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Login.setUserName (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Artwork.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Artwork.cy.js:227:10)",
+                "diff": null
+              },
+              "uuid": "07cf3c48-1898-4274-a48c-5952dbbd52d1",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by complete Artwork ID on Reject tab",
+              "fullTitle": "visit Verve Access Search by complete Artwork ID on Reject tab",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"VERVE-PRO-2023-01-03-0918424864\");\nAw.setVerifySearch(\"VERVE-PRO-2023-01-03-0918424864\");\nln.setLogout();",
+              "err": {},
+              "uuid": "737a3f52-09f9-49c0-9311-4bf88759ea86",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by incomplete Artwork ID on Reject tab",
+              "fullTitle": "visit Verve Access Search by incomplete Artwork ID on Reject tab",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"VERVE-PRO-2023\");\nAw.setVerifySearch(\"VERVE-PRO-2023\");\nln.setLogout();",
+              "err": {},
+              "uuid": "0a65fa76-01be-446a-baba-372e34904a02",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by complete Artwork Title on Reject tab",
+              "fullTitle": "visit Verve Access Search by complete Artwork Title on Reject tab",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"Artwork59042\");\nAw.setVerifySearch(\"Artwork59042\");\nln.setLogout();",
+              "err": {},
+              "uuid": "d278e697-cceb-4204-a325-18f582c0bc89",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by incomplete Artwork Title on Reject tab",
+              "fullTitle": "visit Verve Access Search by incomplete Artwork Title on Reject tab",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"Artwork\");\nAw.setVerifySearch(\"Artwork59042\");\nln.setLogout();",
+              "err": {},
+              "uuid": "86a1d533-12fa-4b5e-a9a3-aa94893d0fdf",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by innvalid parameter on Reject tab",
+              "fullTitle": "visit Verve Access Search by innvalid parameter on Reject tab",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Aw.setGoToArtworkPage();\nAw.setRejectedtab();\nAw.setSearch(\"caosasuddsds sdhsid\");\nAw.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {},
+              "uuid": "c0c6da7a-14ea-4fdf-bad2-817fd2f58445",
+              "parentUUID": "e16eda10-934f-4820-84e9-06d1ded68234",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e99c1f7-6c50-47dd-8891-704191681a95",
+            "f8f57bbf-857e-4a01-b23a-63082244f07e",
+            "1dccfd68-85e5-434e-9154-68314ff17320",
+            "c898c56f-2f29-46e6-857d-ecb49a94e377",
+            "0a85c319-a5e6-490f-bbb1-b5317cc594c6",
+            "bd507705-38fa-4c01-9121-9a452f942b19",
+            "59f27810-aade-4473-a079-7002e7b4abc5",
+            "1a154bc7-90cf-4726-a46c-fb177a8063b5"
+          ],
+          "failures": [
+            "b8a504e8-fda4-4171-8417-a446bc58d9b4",
+            "07cf3c48-1898-4274-a48c-5952dbbd52d1"
+          ],
+          "pending": [],
+          "skipped": [
+            "737a3f52-09f9-49c0-9311-4bf88759ea86",
+            "0a65fa76-01be-446a-baba-372e34904a02",
+            "d278e697-cceb-4204-a325-18f582c0bc89",
+            "86a1d533-12fa-4b5e-a9a3-aa94893d0fdf",
+            "c0c6da7a-14ea-4fdf-bad2-817fd2f58445"
+          ],
+          "duration": 581949,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

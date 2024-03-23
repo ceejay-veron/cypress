@@ -1,0 +1,781 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 28,
+    "passes": 0,
+    "pending": 0,
+    "failures": 28,
+    "start": "2023-07-25T11:52:39.565Z",
+    "end": "2023-07-25T12:17:01.050Z",
+    "duration": 1461485,
+    "testsRegistered": 28,
+=======
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T14:27:08.031Z",
+    "end": "2023-08-22T14:27:59.888Z",
+    "duration": 51857,
+    "testsRegistered": 1,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+<<<<<<< HEAD
+      "uuid": "56eb480b-cc25-4eb8-8bb3-56da0b62dfe9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js",
+=======
+      "uuid": "262ba01e-ddec-401c-9613-648dfd139e77",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Requests.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Requests.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+=======
+          "uuid": "a2fbaa8d-003e-4bb9-ae67-f13f11198b25",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "it should Add contact details",
+              "fullTitle": "visit Verve Access it should Add contact details",
+              "timedOut": null,
+              "duration": 45724,
+=======
+              "title": "Add Request Template without Template and Title",
+              "fullTitle": "visit Verve Access Add Request Template without Template and Title",
+              "timedOut": null,
+              "duration": 51677,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "CD.setGoToContactDetailsPage();\nCD.setAddContactButton();\nCD.setinputName(varTest.text + ' ' + varTest2.testname);\nCD.setinputEmail('softwaretest' + varTest3.number + '@qa.team');\nCD.setinputPhoneNumber('0901' + varTest2.number + '23');\nCD.setinputRole('sale/marketing');\nCD.setinputDepartment();\nCD.setSummitButton();\nCD.setConfirmAddContact('Contact details was successfully created.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:343:8)",
+                "diff": null
+              },
+              "uuid": "be0af5de-a221-4dbc-82b5-c8287addd572",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should not Add contact details without name",
+              "fullTitle": "visit Verve Access it should not Add contact details without name",
+              "timedOut": null,
+              "duration": 39792,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setAddContactButton(); //CD.setinputName(varTest.text + ' ' + varTest2.testname)\nCD.setinputEmail('softwaretest' + varTest3.number + '@qa.team');\nCD.setinputPhoneNumber('0901' + varTest2.number + '23');\nCD.setinputRole('sale/marketing');\nCD.setinputDepartment();\nCD.setSummitButton();\nCD.setConfirmAddContact('name cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:355:8)",
+                "diff": null
+              },
+              "uuid": "d0a9d863-b0a7-4826-b7f5-1376f1d0c410",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should not Add contact details without email",
+              "fullTitle": "visit Verve Access it should not Add contact details without email",
+              "timedOut": null,
+              "duration": 39853,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setAddContactButton();\nCD.setinputName(varTest.text + ' ' + varTest2.testname); //CD.setinputEmail('softwaretest'+varTest3.number +'@qa.team')\nCD.setinputPhoneNumber('0901' + varTest2.number + '23');\nCD.setinputRole('sale/marketing');\nCD.setinputDepartment();\nCD.setSummitButton();\nCD.setConfirmAddContact('email cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:368:8)",
+                "diff": null
+              },
+              "uuid": "8c7c7064-8c54-49e0-a3f7-ef11d5c31eda",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should not Add contact details without phone number",
+              "fullTitle": "visit Verve Access it should not Add contact details without phone number",
+              "timedOut": null,
+              "duration": 40563,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setAddContactButton();\nCD.setinputName(varTest.text + ' ' + varTest2.testname);\nCD.setinputEmail('softwaretest' + varTest3.number + '@qa.team');\nCD.setinputPhoneNumber(' ');\nCD.setinputRole('sale/marketing');\nCD.setinputDepartment(); //CD.setSummitButton()\nCD.setConfirmAddContact('phoneNumber cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:381:8)",
+                "diff": null
+              },
+              "uuid": "c518d1df-4871-45fc-915d-70cd99e49371",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should not Add contact details without Role",
+              "fullTitle": "visit Verve Access it should not Add contact details without Role",
+              "timedOut": null,
+              "duration": 39984,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setAddContactButton();\nCD.setinputName(varTest.text + ' ' + varTest2.testname);\nCD.setinputEmail('softwaretest' + varTest3.number + '@qa.team');\nCD.setinputPhoneNumber('0901' + varTest2.number + '23'); // CD.setinputRole('sale/marketing')\nCD.setinputDepartment();\nCD.setSummitButton();\nCD.setConfirmAddContact('designation cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:394:8)",
+                "diff": null
+              },
+              "uuid": "5a8d70bf-d2e2-4b0e-a7e2-467b3926ae83",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should not Add contact details without department",
+              "fullTitle": "visit Verve Access it should not Add contact details without department",
+              "timedOut": null,
+              "duration": 39914,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setAddContactButton();\nCD.setinputName(varTest.text + ' ' + varTest2.testname);\nCD.setinputEmail('softwaretest' + varTest3.number + '@qa.team');\nCD.setinputPhoneNumber('0901' + varTest2.number + '23');\nCD.setinputRole('sale/marketing'); //CD.setinputDepartment()\nCD.setSummitButton();\nCD.setConfirmAddContact('departmentId cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:407:8)",
+                "diff": null
+              },
+              "uuid": "e55173f7-3f30-4c43-a266-6354c6f0702b",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should view contact details Added",
+              "fullTitle": "visit Verve Access it should view contact details Added",
+              "timedOut": null,
+              "duration": 40170,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setViewContact();\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:420:8)",
+                "diff": null
+              },
+              "uuid": "3119993d-3e84-432b-88b5-dcd6d2e4184e",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should  Edit name",
+              "fullTitle": "visit Verve Access it should  Edit name",
+              "timedOut": null,
+              "duration": 40895,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputName2('ab' + varTest.text + ' ' + 'ZY' + varTest2.testname);\nCD.setSummitButton();\nCD.setConfirmAddContact('Contact details was successfully updated.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:426:8)",
+                "diff": null
+              },
+              "uuid": "c506a9b1-2568-4d70-b6f0-12471e8c5a1e",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should  Edit Email",
+              "fullTitle": "visit Verve Access it should  Edit Email",
+              "timedOut": null,
+              "duration": 40125,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputEmail2('newsoftwaretestzz' + varTest3.number + '@qa.team');\nCD.setSummitButton();\nCD.setConfirmAddContact('Contact details was successfully updated.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:434:8)",
+                "diff": null
+              },
+              "uuid": "894bfd98-2732-447d-8804-7593406b895d",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should  Phone number",
+              "fullTitle": "visit Verve Access it should  Phone number",
+              "timedOut": null,
+              "duration": 41173,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputPhoneNumber2('0901' + varTest2.number + '99');\nCD.setSummitButton();\nCD.setConfirmAddContact('Contact details was successfully updated.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:442:8)",
+                "diff": null
+              },
+              "uuid": "aaf297c6-6c66-424f-bb8c-cad2b833e05d",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should edit Role",
+              "fullTitle": "visit Verve Access it should edit Role",
+              "timedOut": null,
+              "duration": 48829,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputRole2('Banker');\nCD.setSummitButton();\nCD.setConfirmAddContact('Contact details was successfully updated.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:450:8)",
+                "diff": null
+              },
+              "uuid": "376e5a57-cbc3-4c61-8c58-c586c263c183",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should edit Department",
+              "fullTitle": "visit Verve Access it should edit Department",
+              "timedOut": null,
+              "duration": 42994,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputDepartment2();\nCD.setSummitButton();\nCD.setConfirmAddContact('Contact details was successfully updated.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:458:8)",
+                "diff": null
+              },
+              "uuid": "864e45a7-0b13-4edc-95cb-dd77da5a13c7",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should  Edit All",
+              "fullTitle": "visit Verve Access it should  Edit All",
+              "timedOut": null,
+              "duration": 49698,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputName2('cd' + varTest.text + ' ' + 'wx' + varTest2.testname);\nCD.setinputEmail2('backsoftwaretest' + varTest3.number + '@qa.team');\nCD.setinputPhoneNumber2('0901' + varTest2.number + '11');\nCD.setinputRole2('Tech');\nCD.setinputDepartment2();\nCD.setSummitButton();\nCD.setConfirmAddContact('Contact details was successfully updated.');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:466:8)",
+                "diff": null
+              },
+              "uuid": "ddd93ec6-efb3-40a6-912a-fd9c1151c7f7",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should  Edit name with empty field",
+              "fullTitle": "visit Verve Access it should  Edit name with empty field",
+              "timedOut": null,
+              "duration": 55598,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputName2(' ');\nCD.setSummitButton();\nCD.setConfirmAddContact('name cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:478:8)",
+                "diff": null
+              },
+              "uuid": "2319dacd-7537-4312-ac14-3c43a2fb5bbc",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should  Edit Email with empty field",
+              "fullTitle": "visit Verve Access it should  Edit Email with empty field",
+              "timedOut": null,
+              "duration": 47989,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputEmail2(' ');\nCD.setSummitButton();\nCD.setConfirmAddContact('email cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:487:8)",
+                "diff": null
+              },
+              "uuid": "93378b19-976c-4988-9863-71c6426aa4c1",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should  edit Phone number with empty field",
+              "fullTitle": "visit Verve Access it should  edit Phone number with empty field",
+              "timedOut": null,
+              "duration": 48368,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputPhoneNumber2(' '); //CD.setSummitButton()\nCD.setConfirmAddContact('phoneNumber cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:496:8)",
+                "diff": null
+              },
+              "uuid": "025159cf-8bf2-486d-a8f9-10e746224193",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should edit Role with empty field",
+              "fullTitle": "visit Verve Access it should edit Role with empty field",
+              "timedOut": null,
+              "duration": 52799,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputRole2(' ');\nCD.setSummitButton();\nCD.setConfirmAddContact('designation cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:505:8)",
+                "diff": null
+              },
+              "uuid": "f3ad36b5-e33d-4e78-863a-5076dc8c1c94",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should  Edit All with empty field",
+              "fullTitle": "visit Verve Access it should  Edit All with empty field",
+              "timedOut": null,
+              "duration": 42607,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setEditContact();\nCD.setinputName2(' ');\nCD.setinputEmail2(' ');\nCD.setinputPhoneNumber2(' ');\nCD.setinputRole2(' ');\nCD.setinputDepartment2(); // CD.setSummitButton()\nCD.setConfirmAddContact('name cannot be empty!');\nCD.setConfirmAddContact('email cannot be empty!');\nCD.setConfirmAddContact('phoneNumber cannot be empty!');\nCD.setConfirmAddContact('designation cannot be empty!');\nCD.setCloseTab();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:514:8)",
+                "diff": null
+              },
+              "uuid": "aab04856-f84e-45e8-8adf-d492c9a0d86d",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for fullname",
+              "fullTitle": "visit Verve Access it should search for fullname",
+              "timedOut": null,
+              "duration": 50540,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('CFFOV CREVKQCPAM');\nCD.setClickSearch();\nCD.setVerifySearcch('CFFOV CREVKQCPAM');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:530:8)",
+                "diff": null
+              },
+              "uuid": "e7ac41d5-f98b-4610-876e-29f831c51a54",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for incomplete name",
+              "fullTitle": "visit Verve Access it should search for incomplete name",
+              "timedOut": null,
+              "duration": 52889,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('CFFOV');\nCD.setClickSearch();\nCD.setVerifySearcch('CFFOV');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:537:8)",
+                "diff": null
+              },
+              "uuid": "4d692739-ceca-4091-8068-73ba5a2986b9",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for full email",
+              "fullTitle": "visit Verve Access it should search for full email",
+              "timedOut": null,
+              "duration": 59809,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('softwaretest79370@qa.team');\nCD.setClickSearch();\nCD.setVerifySearcch('softwaretest79370@qa.team');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:544:8)",
+                "diff": null
+              },
+              "uuid": "f8413136-d169-43a2-b519-1a1b7cd57b88",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for incomplete email",
+              "fullTitle": "visit Verve Access it should search for incomplete email",
+              "timedOut": null,
+              "duration": 52584,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('softwaretest793');\nCD.setClickSearch();\nCD.setVerifySearcch('softwaretest793');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:551:8)",
+                "diff": null
+              },
+              "uuid": "aeb76706-67fa-4fe7-a43c-456ae8aa48f6",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for full phonenumber",
+              "fullTitle": "visit Verve Access it should search for full phonenumber",
+              "timedOut": null,
+              "duration": 64526,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('09018464723');\nCD.setClickSearch();\nCD.setVerifySearcch('09018464723');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:558:8)",
+                "diff": null
+              },
+              "uuid": "54bb203e-5e14-4f8d-8aa7-3dcbd049bfbe",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for full phonenumber",
+              "fullTitle": "visit Verve Access it should search for full phonenumber",
+              "timedOut": null,
+              "duration": 77069,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('090184');\nCD.setClickSearch();\nCD.setVerifySearcch('090184');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:565:8)",
+                "diff": null
+              },
+              "uuid": "e4cce759-91fa-40d0-8787-9bbb3a0a5f38",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for full role",
+              "fullTitle": "visit Verve Access it should search for full role",
+              "timedOut": null,
+              "duration": 68559,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('sale/marketing');\nCD.setClickSearch();\nCD.setVerifySearcch('sale/marketing');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:572:8)",
+                "diff": null
+              },
+              "uuid": "31e18264-51e6-4ee1-8345-9a52708b6d89",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for full role",
+              "fullTitle": "visit Verve Access it should search for full role",
+              "timedOut": null,
+              "duration": 87165,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('sale/mark');\nCD.setClickSearch();\nCD.setVerifySearcch('sale/mark');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:579:8)",
+                "diff": null
+              },
+              "uuid": "960b859c-bcfc-4053-9d4d-a9ea76add400",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for full Department",
+              "fullTitle": "visit Verve Access it should search for full Department",
+              "timedOut": null,
+              "duration": 54250,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('Dept-FEB-oiUq');\nCD.setClickSearch();\nCD.setVerifySearcch('Dept-FEB-oiUq');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:586:8)",
+                "diff": null
+              },
+              "uuid": "2b880f9b-d0f7-4830-b4ec-e3dca931df7a",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should search for incomplete Department",
+              "fullTitle": "visit Verve Access it should search for incomplete Department",
+              "timedOut": null,
+              "duration": 60853,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "CD.setGoToContactDetailsPage();\nCD.setSearch('Dept-FE');\nCD.setClickSearch();\nCD.setVerifySearcch('Dept-FE');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at ContactDetails.setGoToContactDetailsPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:149:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\ContactDetails.cy.js:593:8)",
+                "diff": null
+              },
+              "uuid": "67112986-61df-4119-b3b9-c433717030d4",
+              "parentUUID": "cd52d4f8-d38c-43e4-954c-d8d1255bf873",
+=======
+              "code": "Rq.setGoToRequestPage();\ncy.wait(12000);\ncy.get(\"(//span[normalize-space()='Closed'])[1]\").click();\ncy.get('li:nth-child(1) span:nth-child(8)').click(); //(//span[contains(text(),'View')])[1]",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: (//span[normalize-space()='Closed'])[1]",
+                "estack": "Error: Syntax error, unrecognized expression: (//span[normalize-space()='Closed'])[1]\n    at Function.Sizzle.error (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:106295:8)\n    at Sizzle.tokenize (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:106947:11)\n    at Sizzle.select (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107374:20)\n    at Function.Sizzle [as find] (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:105599:9)\n    at jQuery.fn.init.find (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107630:11)\n    at new jQuery.fn.init (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:107745:40)\n    at Object.query (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:183650:10)\n    at $Cy.$$ (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:162343:65)\n    at getElements (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157620:20)\n    at tryCatcher (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:13012:23)\n    at Function.Promise.attempt.Promise.try (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:10286:29)\n    at resolveElements (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157670:67)\n    at Context.get (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:157681:14)\n    at https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:170360:15\n    at tryCatcher (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromiseCtx (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:11041:10)\n    at _drainQueueStep (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7723:12)\n    at _drainQueue (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7712:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://verve-access-customer.k8.isw.la/__cypress/runner/cypress_runner.js:7728:5)",
+                "diff": null
+              },
+              "uuid": "e2b3d213-c3bc-4121-a52b-938efcd8aea8",
+              "parentUUID": "a2fbaa8d-003e-4bb9-ae67-f13f11198b25",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+<<<<<<< HEAD
+            "be0af5de-a221-4dbc-82b5-c8287addd572",
+            "d0a9d863-b0a7-4826-b7f5-1376f1d0c410",
+            "8c7c7064-8c54-49e0-a3f7-ef11d5c31eda",
+            "c518d1df-4871-45fc-915d-70cd99e49371",
+            "5a8d70bf-d2e2-4b0e-a7e2-467b3926ae83",
+            "e55173f7-3f30-4c43-a266-6354c6f0702b",
+            "3119993d-3e84-432b-88b5-dcd6d2e4184e",
+            "c506a9b1-2568-4d70-b6f0-12471e8c5a1e",
+            "894bfd98-2732-447d-8804-7593406b895d",
+            "aaf297c6-6c66-424f-bb8c-cad2b833e05d",
+            "376e5a57-cbc3-4c61-8c58-c586c263c183",
+            "864e45a7-0b13-4edc-95cb-dd77da5a13c7",
+            "ddd93ec6-efb3-40a6-912a-fd9c1151c7f7",
+            "2319dacd-7537-4312-ac14-3c43a2fb5bbc",
+            "93378b19-976c-4988-9863-71c6426aa4c1",
+            "025159cf-8bf2-486d-a8f9-10e746224193",
+            "f3ad36b5-e33d-4e78-863a-5076dc8c1c94",
+            "aab04856-f84e-45e8-8adf-d492c9a0d86d",
+            "e7ac41d5-f98b-4610-876e-29f831c51a54",
+            "4d692739-ceca-4091-8068-73ba5a2986b9",
+            "f8413136-d169-43a2-b519-1a1b7cd57b88",
+            "aeb76706-67fa-4fe7-a43c-456ae8aa48f6",
+            "54bb203e-5e14-4f8d-8aa7-3dcbd049bfbe",
+            "e4cce759-91fa-40d0-8787-9bbb3a0a5f38",
+            "31e18264-51e6-4ee1-8345-9a52708b6d89",
+            "960b859c-bcfc-4053-9d4d-a9ea76add400",
+            "2b880f9b-d0f7-4830-b4ec-e3dca931df7a",
+            "67112986-61df-4119-b3b9-c433717030d4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1425319,
+=======
+            "e2b3d213-c3bc-4121-a52b-938efcd8aea8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 51677,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

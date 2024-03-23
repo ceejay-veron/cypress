@@ -1,0 +1,383 @@
+{
+  "stats": {
+<<<<<<< HEAD
+    "suites": 1,
+    "tests": 12,
+    "passes": 0,
+    "pending": 0,
+    "failures": 12,
+    "start": "2023-07-25T12:59:11.844Z",
+    "end": "2023-07-25T13:08:17.498Z",
+    "duration": 545654,
+    "testsRegistered": 12,
+    "passPercent": 0,
+    "pendingPercent": 0,
+=======
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-22T14:29:36.790Z",
+    "end": "2023-08-22T14:29:36.796Z",
+    "duration": 6,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+<<<<<<< HEAD
+    {
+      "uuid": "d1958ee3-4c8e-4685-bd83-7f45ce776f5c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should Verify User Role",
+              "fullTitle": "visit Verve Access should Verify User Role",
+              "timedOut": null,
+              "duration": 69315,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ant-dropdown-link > .sidebar-svg').click().wait(3000);\ncy.contains('CORPORATE_ADMIN').should('be.visible');\ncy.get('.red').click();\ncy.wait(6000); //ln.setLogout()",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.ant-dropdown-link > .sidebar-svg`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.ant-dropdown-link > .sidebar-svg`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:364:8)",
+                "diff": null
+              },
+              "uuid": "a92b6bcf-593b-47a5-afeb-bd7498b8368e",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should View guides section from the dashboard after login ",
+              "fullTitle": "visit Verve Access should View guides section from the dashboard after login ",
+              "timedOut": null,
+              "duration": 40912,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Views the guides section, views all categories from the dashboard and views category guides from the dashboard\nguide.GetDashboardGuidesSection();\nguide.ViewAllGuidesFromDashboard();\nguide.ViewCategoryGuidesFromDashboard();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.category-header`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `.category-header`, but never found it.\n    at userGuide.GetDashboardGuidesSection (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:201:32)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:371:11)",
+                "diff": null
+              },
+              "uuid": "beea5018-352f-4809-99d4-c9085f1e3858",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should view the guides page ",
+              "fullTitle": "visit Verve Access should view the guides page ",
+              "timedOut": null,
+              "duration": 43494,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//View the Guides Page\nguide.GoToAdminGuidesPage();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:229:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:378:11)",
+                "diff": null
+              },
+              "uuid": "772008f6-c781-4991-892a-9784db0cdde8",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should view the category guides page ",
+              "fullTitle": "visit Verve Access should view the category guides page ",
+              "timedOut": null,
+              "duration": 41013,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//View the Guides uploaded for the selected category\nguide.GoToAdminCategoryGuidesPage();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminCategoryGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:248:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:383:11)",
+                "diff": null
+              },
+              "uuid": "bf801dcf-b42b-4155-a328-7b5f2a1da5bc",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should download selected guide from a category ",
+              "fullTitle": "visit Verve Access should download selected guide from a category ",
+              "timedOut": null,
+              "duration": 40944,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Download an uploaded guide\nguide.DownloadAdminGuide();\ncy.wait(16000);\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.DownloadAdminGuide (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:268:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:388:11)",
+                "diff": null
+              },
+              "uuid": "cc1ba9db-62e5-49f4-ad01-8ca376b1a045",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for an existing category ",
+              "fullTitle": "visit Verve Access should search for an existing category ",
+              "timedOut": null,
+              "duration": 40755,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Search for an existing category on the Guides Page\nguide.GoToAdminGuidesPage();\nguide.SearchGuides('Scheme Rules');\nguide.SetVerifySearch('Scheme Rules');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:229:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:394:11)",
+                "diff": null
+              },
+              "uuid": "c7a1e5d6-87c3-4b3f-a25a-868e6a4b6918",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for a non-existing category ",
+              "fullTitle": "visit Verve Access should search for a non-existing category ",
+              "timedOut": null,
+              "duration": 40783,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Search for a non-existing category on the Guides Page\nguide.GoToAdminGuidesPage();\nguide.SearchGuides('Non-existing Category');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:229:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:401:11)",
+                "diff": null
+              },
+              "uuid": "fa642e3a-c864-400d-9565-8b8328225c95",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for an existing category without guides uploaded for the organizationType",
+              "fullTitle": "visit Verve Access should search for an existing category without guides uploaded for the organizationType",
+              "timedOut": null,
+              "duration": 42197,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Search for a existing category on the Guides Page that does not have categories uploaded for the user's organization type\nguide.GoToAdminGuidesPage();\nguide.SearchGuides('Card Perso Category');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:229:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:408:11)",
+                "diff": null
+              },
+              "uuid": "17fe4920-f3cd-47b3-8daa-df61f57b3e52",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for existing guides within a category ",
+              "fullTitle": "visit Verve Access should search for existing guides within a category ",
+              "timedOut": null,
+              "duration": 46475,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Search for guides existing within the selected category\nguide.GoToAdminCategoryGuidesPage();\nguide.SearchGuides('Verve Scheme_Guides');\nguide.SetVerifySearch('Verve Scheme_Guides');\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminCategoryGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:248:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:415:11)",
+                "diff": null
+              },
+              "uuid": "162ca630-ef9d-41d2-9095-4f3ea0b914da",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for guides not existing within the selected category ",
+              "fullTitle": "visit Verve Access should search for guides not existing within the selected category ",
+              "timedOut": null,
+              "duration": 44205,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Search for guides not existing within the selected category but uploaded for the same organization Type of the user\nguide.GoToAdminCategoryGuidesPage();\nguide.SearchGuides('Issuer_Guides-88590');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminCategoryGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:248:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:422:11)",
+                "diff": null
+              },
+              "uuid": "d76359a0-3f05-437d-add8-2187cc881c16",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for existing guides within a category uploaded for a different organization type",
+              "fullTitle": "visit Verve Access should search for existing guides within a category uploaded for a different organization type",
+              "timedOut": null,
+              "duration": 47827,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Search for guides existing within the selected category but uploaded for a different organization Type\nguide.GoToAdminCategoryGuidesPage();\nguide.SearchGuides('Corporate_Guides-63694');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminCategoryGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:248:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:429:11)",
+                "diff": null
+              },
+              "uuid": "76728110-b154-4db7-9308-9509e8062935",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search for existing guides within a category uploaded for a different organization type",
+              "fullTitle": "visit Verve Access should search for existing guides within a category uploaded for a different organization type",
+              "timedOut": null,
+              "duration": 45014,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Search for non-existing guides\nguide.GoToAdminCategoryGuidesPage();\nguide.SearchGuides('UserManual00001');\nguide.VerifyNoResultsReturned();\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `#burger-cont > :nth-child(1)`, but never found it.\n    at userGuide.GoToAdminCategoryGuidesPage (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:248:8)\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\B-CorporateAdminUATTests\\Guides.cy.js:436:11)",
+                "diff": null
+              },
+              "uuid": "0c7cda4f-ffd7-4041-9296-0b59844eba6a",
+              "parentUUID": "4073e838-46a0-4afb-9f38-fa67a879c2e9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a92b6bcf-593b-47a5-afeb-bd7498b8368e",
+            "beea5018-352f-4809-99d4-c9085f1e3858",
+            "772008f6-c781-4991-892a-9784db0cdde8",
+            "bf801dcf-b42b-4155-a328-7b5f2a1da5bc",
+            "cc1ba9db-62e5-49f4-ad01-8ca376b1a045",
+            "c7a1e5d6-87c3-4b3f-a25a-868e6a4b6918",
+            "fa642e3a-c864-400d-9565-8b8328225c95",
+            "17fe4920-f3cd-47b3-8daa-df61f57b3e52",
+            "162ca630-ef9d-41d2-9095-4f3ea0b914da",
+            "d76359a0-3f05-437d-add8-2187cc881c16",
+            "76728110-b154-4db7-9308-9509e8062935",
+            "0c7cda4f-ffd7-4041-9296-0b59844eba6a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 542934,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+=======
+    false
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

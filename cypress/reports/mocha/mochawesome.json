@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-24T14:49:08.026Z",
+    "end": "2023-07-24T14:49:28.764Z",
+    "duration": 20738,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "de576b7a-fac9-4288-9f41-9e78c364a48d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\logincorporateUsers.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\logincorporateUsers.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "82f5c5cf-46e0-4469-bae2-7b3d35aedbd3",
+          "title": "MyTestSuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should visit Google",
+              "fullTitle": "MyTestSuite should visit Google",
+              "timedOut": null,
+              "duration": 4071,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://google.com/');\ncy.title().should('eq', 'Google');",
+              "err": {},
+              "uuid": "9675979a-bf71-44e5-b734-a460c9570f00",
+              "parentUUID": "82f5c5cf-46e0-4469-bae2-7b3d35aedbd3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should  search",
+              "fullTitle": "MyTestSuite should  search",
+              "timedOut": null,
+              "duration": 13298,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://google.com/');\ncy.get('.gLFyf').click().type('interswitch');\ncy.get('#jZ2SBf > .wM6W7d > span').click();",
+              "err": {},
+              "uuid": "091d5eca-4c6e-433d-8b97-5118cd50d845",
+              "parentUUID": "82f5c5cf-46e0-4469-bae2-7b3d35aedbd3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9675979a-bf71-44e5-b734-a460c9570f00",
+            "091d5eca-4c6e-433d-8b97-5118cd50d845"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17369,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "stats": {
+<<<<<<< HEAD
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-24T15:03:18.983Z",
+    "end": "2023-07-24T15:03:18.984Z",
+    "duration": 1,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
+=======
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T12:30:20.879Z",
+    "end": "2023-08-22T12:31:39.230Z",
+    "duration": 78351,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+<<<<<<< HEAD
+    false
+=======
+    {
+      "uuid": "1f10a66e-65b2-4fc2-bc5e-defedb1d63bc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\Oldverveadmin.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\Oldverveadmin.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7be22f3a-cb12-4424-a93f-8b16aa680d08",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should Navigate to Request Page",
+              "fullTitle": "visit Verve Access should Navigate to Request Page",
+              "timedOut": null,
+              "duration": 54203,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.reload({\n  timeout: 130000\n});\nconst yourFixturePath = 'files/verve.jpg';\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('vervAdminUser'));\n  ln.setPassword(Cypress.env('verveAdminPass'));\n  ln.clickSubmit();\n}); // Search by  complete Report Title\ncy.get('#burger-cont > :nth-child(3)').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(12) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); // should see Request setting\ncy.contains('Request Setting').should('be.visible'); // Navigate to request setting\ncy.get('.ant-btn').click(); // return to Request page\ncy.get('.title-section > svg').click(); // Navigate to open and closed tab\ncy.get('[aria-selected=\"false\"] > span').click();\ncy.wait(8000);\ncy.reload();\ncy.get('#burger-cont > :nth-child(3)').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(12) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); //Download request\n// ccy.get(\"//li[1]//span[5]//i[1]//*[name()='svg']\").trigger('mouseover')",
+              "err": {},
+              "uuid": "24e19b61-fdcd-4428-a424-f0304050c5cf",
+              "parentUUID": "7be22f3a-cb12-4424-a93f-8b16aa680d08",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "observe",
+              "fullTitle": "visit Verve Access observe",
+              "timedOut": null,
+              "duration": 23887,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "/* cy.reload({timeout : 130000})\n   \n      const yourFixturePath = 'files/verve.jpg';\n     cy.get('form').within(($form) => {\n       ln.setUserName(Cypress.env('vervAdminUser'))\n       ln.setPassword(Cypress.env('verveAdminPass'))\n       ln.clickSubmit();\n       \n   })*/\n// Search by  complete Report Title\ncy.get('#burger-cont > :nth-child(3)').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(12) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); // should see Request setting\ncy.contains('Request Setting').should('be.visible'); // Navigate to request setting\ncy.get('.ant-btn').click(); // return to Request page\ncy.get('.title-section > svg').click(); // Navigate to open and closed tab\ncy.get('[aria-selected=\"false\"] > span').click();\ncy.wait(8000);\ncy.reload();\ncy.get('#burger-cont > :nth-child(3)').click();\ncy.get('#sidebar > .sidebar-container > #side-nav > .isw-sideBarNav > :nth-child(12) > .isw-sideBarNavLink > .isw-sideBarNavLabel').click(); //Download request\n// ccy.get(\"//li[1]//span[5]//i[1]//*[name()='svg']\").trigger('mouseover')",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `[aria-selected=\"false\"] > span`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `[aria-selected=\"false\"] > span`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\Oldverveadmin.cy.js:1412:8)",
+                "diff": null
+              },
+              "uuid": "6a2e217d-e946-4c3c-8772-d7a4ec9b4a37",
+              "parentUUID": "7be22f3a-cb12-4424-a93f-8b16aa680d08",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "24e19b61-fdcd-4428-a424-f0304050c5cf"
+          ],
+          "failures": [
+            "6a2e217d-e946-4c3c-8772-d7a4ec9b4a37"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 78090,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

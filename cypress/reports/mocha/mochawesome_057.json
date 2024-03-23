@@ -1,0 +1,164 @@
+{
+  "stats": {
+<<<<<<< HEAD
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-21T14:02:34.346Z",
+    "end": "2023-08-21T14:05:22.288Z",
+    "duration": 167942,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+=======
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-22T15:57:42.031Z",
+    "end": "2023-08-22T15:57:42.032Z",
+    "duration": 1,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+<<<<<<< HEAD
+    {
+      "uuid": "d62f88d9-6954-4542-a84d-d196ae72a5f7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Dashboard.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\A-CorporateUserUATTests\\Dashboard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8bdcc812-bfe6-4951-8b37-500b8d788465",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "This test views the dashboard elements",
+              "fullTitle": "visit Verve Access This test views the dashboard elements",
+              "timedOut": null,
+              "duration": 95125,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//View Dashboard Widgets\ncy.get('.top-section');\ncy.get('.top-section > :nth-child(1)').contains('Total Decals');\ncy.get('body > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)'); //Artwork widget\ncy.get('.top-section > :nth-child(3)'); //Whitelist Cards Widget\ncy.get('.top-section > :nth-child(4)'); //Users widget\nln.setLogout();",
+              "err": {},
+              "uuid": "e9df54a6-6aa1-4a4c-a437-2c95337bad13",
+              "parentUUID": "8bdcc812-bfe6-4951-8b37-500b8d788465",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should View guides section from the dashboard after login ",
+              "fullTitle": "visit Verve Access should View guides section from the dashboard after login ",
+              "timedOut": null,
+              "duration": 39573,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Views the guides section, views all categories from the dashboard and views category guides from the dashboard\nguide.GetDashboardGuidesSection();\nguide.ViewAllGuidesFromDashboard();\nguide.ViewCategoryGuidesFromDashboard();\nln.setLogout();",
+              "err": {},
+              "uuid": "644ba89b-191f-426a-a194-90921ba420ce",
+              "parentUUID": "8bdcc812-bfe6-4951-8b37-500b8d788465",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "This test navigates the user to the verve certification portal",
+              "fullTitle": "visit Verve Access This test navigates the user to the verve certification portal",
+              "timedOut": null,
+              "duration": 32335,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Verve Certification Portal\ncy.get('.verve-cert-container').contains('Go to Verve Certification Portal');\ncy.get('.verve-cert-click').click();\nln.setLogout();",
+              "err": {},
+              "uuid": "7580850a-375c-4058-967e-50cb51f8ddba",
+              "parentUUID": "8bdcc812-bfe6-4951-8b37-500b8d788465",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e9df54a6-6aa1-4a4c-a437-2c95337bad13",
+            "644ba89b-191f-426a-a194-90921ba420ce",
+            "7580850a-375c-4058-967e-50cb51f8ddba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 167033,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+=======
+    false
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T11:19:40.037Z",
+    "end": "2023-08-22T11:20:42.493Z",
+    "duration": 62456,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f99024dc-6e8f-4fdb-8153-1c7737fe4c4a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Users.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Users.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ddd5a325-4a27-4c31-bc6f-abbbebb72385",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should Navigate to user and search",
+              "fullTitle": "visit Verve Access should Navigate to user and search",
+              "timedOut": null,
+              "duration": 61915,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.reload({\n  timeout: 130000\n});\ncy.get('form').within($form => {\n  ln.setUserName(Cypress.env('vervAdminUser'));\n  ln.setPassword(Cypress.env('verveAdminPass'));\n  ln.clickSubmit();\n}); // Search by Complete first name  on active tab     \nUs.setGoToUserPage();\nUs.setSearch(\"Onyedikachi\");\nUs.setVerifySearch(\"Onyedikachi\");\ncy.reload(); // Search by inComplete first name  on active tab     \nUs.setGoToUserPage();\nUs.setSearch(\"Onye\");\nUs.setVerifySearch(\"Onye\");\ncy.reload(); // Search by Complete last Name on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"Anumudu\");\nUs.setVerifySearch(\"Anumudu\");\ncy.reload(); // Search by inComplete last Name on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"Anu\");\nUs.setVerifySearch(\"Anu\");\ncy.reload(); // Search by Complete Email name on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"mayowa.onaolapo@interswitchgroup.com\");\nUs.setVerifySearch(\"mayowa.onaolapo@interswitchgroup.com\");\ncy.reload(); // Search by inComplete email on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"mayowa.onaolapo\");\nUs.setVerifySearch(\"mayowa.onaolapo\");\ncy.reload(); // Serach by innvalid parameter on on active tab\nUs.setGoToUserPage();\nUs.setSearch(\"xxxxx903567\");\nUs.setVerifySearch(\"No Data to Display\");\ncy.reload(); // Search by Complete first name  on inactive tab     \nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"Ijeoma\");\nUs.setVerifySearch(\"Ijeoma\");\ncy.reload(); // Search by inComplete first name  on inactive tab     \nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"Ije\");\nUs.setVerifySearch(\"Ije\");\ncy.reload(); // Search by Complete last Name on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"Olebuezi\");\nUs.setVerifySearch(\"Olebuezi\");\ncy.reload(); // Search by inComplete last Name on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"Ole\");\nUs.setVerifySearch(\"Ole\");\ncy.reload(); // Search by Complete Email name on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"lynda.okoro@interswitchgroup.com\");\nUs.setVerifySearch(\"lynda.okoro@interswitchgroup.com\");\ncy.reload(); // Search by inComplete email on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"lynda.okoro\");\nUs.setVerifySearch(\"lynda.okoro\");\ncy.reload(); // Serach by innvalid parameter on on inactive tab\nUs.setGoToUserPage();\nUs.setInactiveTab();\nUs.setSearch(\"trjshdjdh udnskvfki\");\nUs.setVerifySearch(\"No Data to Display\");\ncy.reload();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Users.cy.js:382:8)",
+                "diff": null
+              },
+              "uuid": "0b356a5c-8c48-4783-bfb5-b0370a620ef2",
+              "parentUUID": "ddd5a325-4a27-4c31-bc6f-abbbebb72385",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0b356a5c-8c48-4783-bfb5-b0370a620ef2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 61915,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

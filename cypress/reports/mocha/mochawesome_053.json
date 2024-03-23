@@ -1,0 +1,344 @@
+{
+  "stats": {
+    "suites": 1,
+<<<<<<< HEAD
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-21T13:47:55.573Z",
+    "end": "2023-08-21T13:49:21.169Z",
+    "duration": 85596,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a326b569-c0c1-4a89-9e99-70dad25e6901",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\logincorporateUsers.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\logincorporateUsers.cy.js",
+=======
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T15:56:09.305Z",
+    "end": "2023-08-22T15:56:37.575Z",
+    "duration": 28270,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 8,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "e6cf64d0-1b9c-4e16-97eb-74b4790c5583",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Reports.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Reports.cy.js",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+<<<<<<< HEAD
+          "uuid": "13fe7028-0751-485e-a1f2-848df69b7106",
+          "title": "MyTestSuite",
+=======
+          "uuid": "3b641052-b2bd-4d63-b587-6b35a8809289",
+          "title": "visit Verve Access",
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+<<<<<<< HEAD
+              "title": "should visit Google",
+              "fullTitle": "MyTestSuite should visit Google",
+              "timedOut": null,
+              "duration": 36535,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://google.com/');\ncy.title().should('eq', 'Google');",
+              "err": {},
+              "uuid": "9c55aebb-d89e-4a90-91f0-44170308a5ea",
+              "parentUUID": "13fe7028-0751-485e-a1f2-848df69b7106",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should  search",
+              "fullTitle": "MyTestSuite should  search",
+              "timedOut": null,
+              "duration": 36579,
+=======
+              "title": "Search by  complete Report Title",
+              "fullTitle": "visit Verve Access Search by  complete Report Title",
+              "timedOut": null,
+              "duration": 28093,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "cy.visit('https://google.com/');\ncy.get('.gLFyf').click().type('interswitch');\ncy.get('#jZ2SBf > .wM6W7d > span').click();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 20050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>Intersw...</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom",
+                "estack": "CypressError: Timed out retrying after 20050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<span>Intersw...</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://www.google.com/__cypress/runner/cypress_runner.js:161860:76)\n    at runAllChecks (https://www.google.com/__cypress/runner/cypress_runner.js:147665:12)\n    at retryActionability (https://www.google.com/__cypress/runner/cypress_runner.js:147745:16)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Function.Promise.attempt.Promise.try (https://www.google.com/__cypress/runner/cypress_runner.js:10286:29)\n    at whenStable (https://www.google.com/__cypress/runner/cypress_runner.js:166930:65)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:166385:14\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:11049:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:11129:18)\n    at Promise._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:11073:18)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:12687:46\nFrom Your Spec Code:\n    at Context.eval (https://www.google.com/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\logincorporateUsers.cy.js:108:40)",
+                "diff": null
+              },
+              "uuid": "8c51829e-d6e6-4b7c-b526-70b32ecc3c94",
+              "parentUUID": "13fe7028-0751-485e-a1f2-848df69b7106",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9c55aebb-d89e-4a90-91f0-44170308a5ea"
+          ],
+          "failures": [
+            "8c51829e-d6e6-4b7c-b526-70b32ecc3c94"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 73114,
+=======
+              "code": "// Search by  complete Report Title\nRp.setGoToReportPage2();\nRp.setSearch('unwhitelistcardtemplate - without PAN (1).xls'); //Rp.setVerifySearch('unwhitelistcardtemplate - without PAN (1).xls')\nln.setLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected 'Dashboard | Verve Access' to equal 'Verve Access'\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\C-VerveUserUATTests\\Reports.cy.js:212:16)",
+                "diff": "- '\\'Dashboard | Verve Access\\''\n+ '\\'Verve Access\\''\n"
+              },
+              "uuid": "c4fd1857-6741-4123-a9e7-1dc61078826e",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by  Incomplete Report Title",
+              "fullTitle": "visit Verve Access Search by  Incomplete Report Title",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Search by  Incomplete Report Title\nRp.setGoToReportPage2();\nRp.setSearch('unwhitelistcardtemplate'); // Rp.setVerifySearch('unwhitelistcardtemplate')\nln.setLogout();",
+              "err": {},
+              "uuid": "55385ca7-deb9-4a23-881f-87cbe83a8c5f",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Search by  non-existing Title",
+              "fullTitle": "visit Verve Access Search by  non-existing Title",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Search by  non-existing Title\nRp.setGoToReportPage2();\nRp.setSearch(\"trjshdjdh udnskvfki\");\nRp.setClickSearch();\nRp.setVerifySearch(\"No Data to Display\");\nln.setLogout();",
+              "err": {},
+              "uuid": "9d204ec0-bf2d-47b7-8416-0786e7204a26",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of last 30 days",
+              "fullTitle": "visit Verve Access it should search for Report of last 30 days",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateTolast30days();\nln.setLogout();",
+              "err": {},
+              "uuid": "9db1438d-8d60-4488-a342-6bfa590f5d4c",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of This Month",
+              "fullTitle": "visit Verve Access it should search for Report of This Month",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToThisMonth();\nln.setLogout();",
+              "err": {},
+              "uuid": "b36bd5fb-0469-4dac-83d8-ee0ed71ef732",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of last Month",
+              "fullTitle": "visit Verve Access it should search for Report of last Month",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToLastMonth();\nln.setLogout();",
+              "err": {},
+              "uuid": "c2425ccb-f850-4621-8f53-3ed2e83c2703",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of Today",
+              "fullTitle": "visit Verve Access it should search for Report of Today",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToToday();\nln.setLogout();",
+              "err": {},
+              "uuid": "270dfb87-176c-49ac-bc79-75d174c3d88f",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of Yesterday",
+              "fullTitle": "visit Verve Access it should search for Report of Yesterday",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToYesterday();\nln.setLogout();",
+              "err": {},
+              "uuid": "106d86a3-6067-4a33-9e2d-4d9085f2e368",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "it should search for Report of last seven days",
+              "fullTitle": "visit Verve Access it should search for Report of last seven days",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Rp.setGoToReportPage2();\nRp.setselectFilter();\nRp.setDateToLast7Days();\nln.setLogout();",
+              "err": {},
+              "uuid": "6ed53a57-6c70-406e-85a6-9eb7a2a17789",
+              "parentUUID": "3b641052-b2bd-4d63-b587-6b35a8809289",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c4fd1857-6741-4123-a9e7-1dc61078826e"
+          ],
+          "pending": [],
+          "skipped": [
+            "55385ca7-deb9-4a23-881f-87cbe83a8c5f",
+            "9d204ec0-bf2d-47b7-8416-0786e7204a26",
+            "9db1438d-8d60-4488-a342-6bfa590f5d4c",
+            "b36bd5fb-0469-4dac-83d8-ee0ed71ef732",
+            "c2425ccb-f850-4621-8f53-3ed2e83c2703",
+            "270dfb87-176c-49ac-bc79-75d174c3d88f",
+            "106d86a3-6067-4a33-9e2d-4d9085f2e368",
+            "6ed53a57-6c70-406e-85a6-9eb7a2a17789"
+          ],
+          "duration": 28093,
+>>>>>>> 6758b0e7ff0c6b758b70610ce02f26bc896d4963
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

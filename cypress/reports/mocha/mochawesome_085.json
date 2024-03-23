@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-22T09:22:12.541Z",
+    "end": "2023-08-22T09:22:42.399Z",
+    "duration": 29858,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6c3652f4-0182-4741-881a-dd38933d32fb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Decals.cy.js",
+      "file": "cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Decals.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "246b7f8a-ee48-4a03-a00f-bcd4dd1b200a",
+          "title": "visit Verve Access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it Approve decal ",
+              "fullTitle": "visit Verve Access it Approve decal ",
+              "timedOut": null,
+              "duration": 20629,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "DC1.setGoToDecalsPage();\ncy.get('.add-button-container > .d-flx').click();\ncy.get(\"#fileName\").type('newDecal');\ncy.fixture('verve.jpg', {\n  encoding: null\n}).as('myFixture');\ncy.get('input[accept=\".png,.jpg,.jpeg,.svg,.pdf\"]').selectFile('@myFixture', {\n  force: true\n});\ncy.get(\"#createArtwork\").click();\ncy.contains('Decal was successfully uploaded.').should(\"be.visible\"); // DC.setPendingTab()\n//cy.get(':nth-child(1) > #table-dropdown > .anticon > svg > path').trigger('mouseover')\n// cy.get('.green').click()",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `form`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `visit Verve Access`\n    at Context.eval (https://verve-access-customer.k8.isw.la/__cypress/tests?p=cypress\\e2e\\VerveAccess-UI-Tests-UAT\\D-VerveAdminUATTests\\Decals.cy.js:421:8)",
+                "diff": null
+              },
+              "uuid": "180be324-b681-4754-ac41-849505316cbf",
+              "parentUUID": "246b7f8a-ee48-4a03-a00f-bcd4dd1b200a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "180be324-b681-4754-ac41-849505316cbf"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20629,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "mochaFile": "cypress/reports/results/my-test-output-[hash].xml",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
